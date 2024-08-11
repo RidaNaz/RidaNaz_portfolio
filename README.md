@@ -16,3 +16,4 @@ npm install --save aos@next
 npm install react-multi-carousel@latest
 npm outdated
 npx shadcn-ui@latest init
+npm update next
