@@ -22,7 +22,7 @@ const HeroContent = () => {
           className='Welcome-box py-[8px] px-[7px] border-[#7042f88b] opacity-[0.9]'>
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            <Link href = "#projects">Future Cloud Native AI Engineer</Link>
+          Future Cloud Native AI Engineer
           </h1>
         </motion.div>
         <motion.div
@@ -45,7 +45,7 @@ const HeroContent = () => {
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className=" mt-3 py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         ><Link href ="https://github.com/RidaNaz" className = "cursor-poniter flex flex-row gap-4 justify-center pt-1">
           <RxGithubLogo /><span className="-mt-1">Github Profile</span>
           </Link>

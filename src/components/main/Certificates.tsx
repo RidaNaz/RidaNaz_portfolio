@@ -7,7 +7,7 @@ const Certificates = () => {
   return (
     <div id="certificates" className="-mt-6 w-full pb-28">
 
-      <h1 className="text-center font-bold text-[40px] py-20 mb-[15px] ">
+      <h1 className="text-center font-bold text-white text-[40px] py-20 mb-[15px] ">Here&rsquo;s my {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600">CERTIFICATES</span>
         </h1>
 
