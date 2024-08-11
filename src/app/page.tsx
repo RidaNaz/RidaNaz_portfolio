@@ -1,6 +1,7 @@
 import Certificates from "../components/main/Certificates";
 import Hero from "../components/main/Hero";
 import RecentProjects from "../components/main/RecentProjects";
+import Reviews from "../components/main/Reviews";
 import Services from "../components/main/Services";
 import Skills from "../components/main/Skills";
 
@@ -12,7 +13,7 @@ export default function Home() {
         <Skills />
         <RecentProjects />
         <Services />
-        {/* <Reviews /> */}
+        <Reviews />
         <Certificates />
       </div>
     </main>

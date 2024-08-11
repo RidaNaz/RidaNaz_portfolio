@@ -17,20 +17,35 @@ const Services = () => {
                     <ServicesCard title="React.js Website" num="01" /></Button>
                 </div>
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+                    <Button>
                     <ServicesCard title="Next.js Website" num="02" />
+                </Button>
                 </div>
+                
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="400">
+                    <Button>
                     <ServicesCard title="Fullstack Website" num="03" />
+                </Button>
                 </div>
+                
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+                    <Button>
                     <ServicesCard title="Node Js API" num="04" />
+                </Button>
                 </div>
+                
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="400">
+                    <Button>
                     <ServicesCard title="MERN WebApp" num="05" />
+                </Button>
                 </div>
+                
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="600">
+                    <Button>
                     <ServicesCard title="Bug Fixing" num="06" />
+                </Button>
                 </div>
+                
             </div>
         </div>
     )
