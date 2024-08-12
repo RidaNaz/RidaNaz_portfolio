@@ -11,7 +11,7 @@ const Certificates = () => {
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600">CERTIFICATES</span>
         </h1>
 
-      <div className="mt-6 px-6 grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="mt-6 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {CertificateCards.map((card) => (
           <Button
             key={card.id}
@@ -32,7 +32,7 @@ const Certificates = () => {
             // remove bg-white dark:bg-slate-900
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex lg:flex-row flex-row  sm:flex-col lg:items-center items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
               <Image
                 src={card.thumbnail}
                 alt={card.thumbnail}
