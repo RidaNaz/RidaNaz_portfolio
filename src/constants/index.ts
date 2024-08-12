@@ -180,7 +180,7 @@ export const fullstack_projects = [{
   title: "FullStack Ecommerce Website",
   des: "Fully functional E-Commerce Next.js website in which I integrate authentication and payment method...",
   img: "/web4.jpg",
-  iconLists: ["/next.svg", "/sanity.svg", "/redux.svg", "/post.svg", "/stripe.svg"],
+  iconLists: ["/next.svg", "/Sanity.svg", "/redux.svg", "/post.svg", "/stripe.svg"],
   link: "https://naz-store.vercel.app/",
 },]
 
