@@ -33,28 +33,28 @@ export const CertificateCards = [
   {
     id: 1,
     title: "Introduction to Data Science",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "This course typically covers fundamental concepts and techniques in the field of data science.",
     className: "md:col-span-2",
     thumbnail: "/data-science.png",
   },
   {
     id: 4,
     title: "Freelancing",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "I have studied many Freelancing platforms like Freelancer, Upwork, Fiverr, Guru, PeoplePerHour.",
     className: "md:col-span-2",
     thumbnail: "/freelancing.png",
   },
   {
     id: 2,
     title: "Digital Marketing",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    desc: "Social media marketing, direct marketing, running ads campaign and measuring ads performance.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/digital-marketing.png",
   },
   {
     id: 3,
     title: "Graphics Design",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "During this course I have polished my skills in Illustration, Photoshop, InDesign, XD and Canva also.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/graphic-designing.png",
   },

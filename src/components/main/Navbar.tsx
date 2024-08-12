@@ -29,11 +29,11 @@ const Navbar = () => {
             <Link href="#skills" className="cursor-pointer">
               Skills
             </Link>
-            <Link href="#certificates" className="cursor-pointer">
-              Certificates
-            </Link>
             <Link href="#portfolio" className="cursor-pointer">
               Portfolio
+            </Link>
+            <Link href="#certificates" className="cursor-pointer">
+              Certificates
             </Link>
           </div>
         </div>

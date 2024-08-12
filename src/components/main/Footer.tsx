@@ -20,10 +20,10 @@ const Footer = () => {
                         <div className="font-bold text-[18px] mb-4">Community</div>
 
                         <Link href="https://www.youtube.com/@RidaNaz67">
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                        <div className="flex flex-row items-center my-[15px] cursor-pointer">
                             <FaYoutube />
-                            <span className="text-[15px] ml-[6px]">Youtube</span>
-                        </p>
+                            <p className="text-[15px] ml-[6px]">Youtube</p>
+                        </div>
                         </Link>
                         <Link href="https://github.com/RidaNaz">
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
