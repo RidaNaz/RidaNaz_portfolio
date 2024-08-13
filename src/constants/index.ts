@@ -97,14 +97,14 @@ export const skill_data2 = [
   {
     skill_name: "Redux",
     Image: "/redux.png",
-    width: 100,
-    height: 100,
+    width: 88,
+    height: 88,
   },
   {
     skill_name: "Framer Motion",
     Image: "/fm.svg",
-    width: 75,
-    height: 75,
+    width: 78,
+    height: 78,
   },
   {
     skill_name: "Tailwind Css",
@@ -124,8 +124,8 @@ export const skill_data3 = [
   {
     skill_name: "Docker",
     Image: "/docker.png",
-    width: 160,
-    height: 160,
+    width: 180,
+    height: 180,
   },
   // {
   //   skill_name: "Apache Kafka",
@@ -209,7 +209,7 @@ export const projects = [
     title: "Cloudinary Gallery Website",
     des: "Gallery Website in which I integrate Cloudinary for efficient image management and optimization...",
     img: "/web3.jpg",
-    iconLists: ["/next.svg", "/sanity.svg", "/tail.svg", "/ts.svg", "/cd.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/cd.svg"],
     link: "https://its-naz-gallery.vercel.app/",
   },
 ];

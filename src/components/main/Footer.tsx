@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[18px] mb-4">Community</div>
 
-                        <Link href="https://www.youtube.com/@RidaNaz67">
+                        <Link href="https://www.youtube.com/@RidaNaz67" target="_blank">
                         <div className="flex flex-row items-center my-[15px] cursor-pointer">
                             <FaYoutube />
                             <p className="text-[15px] ml-[6px]">Youtube</p>
