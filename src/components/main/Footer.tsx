@@ -19,13 +19,13 @@ const Footer = () => {
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[18px] mb-4">Community</div>
 
-                        <Link href="https://www.youtube.com/@RidaNaz67" target="_blank">
+                        <Link href="https://www.youtube.com/@RidaNaz67">
                         <div className="flex flex-row items-center my-[15px] cursor-pointer">
                             <FaYoutube />
                             <p className="text-[15px] ml-[6px]">Youtube</p>
                         </div>
                         </Link>
-                        <Link href="https://github.com/RidaNaz">
+                        <Link href="https://github.com/RidaNaz" target="_blank">
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <RxGithubLogo />
                             <span className="text-[15px] ml-[6px]">Github</span>
@@ -39,7 +39,7 @@ const Footer = () => {
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[18px] mb-4">Social Media</div>
 
-                        <Link href="https://www.linkedin.com/in/ridanaz67/" >
+                        <Link href="https://www.linkedin.com/in/ridanaz67/" target="_blank">
                             <p className="flex flex-row items-center my-[15px] cursor-pointer">
                                 <RxLinkedinLogo />
                                 <span className="text-[15px] ml-[6px]">Linkedin</span>
