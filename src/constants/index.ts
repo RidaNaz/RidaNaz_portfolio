@@ -182,6 +182,14 @@ export const fullstack_projects = [{
   img: "/web4.jpg",
   iconLists: ["/next.svg", "/Sanity.svg", "/redux.svg", "/post.svg", "/stripe.svg"],
   link: "https://naz-store.vercel.app/",
+},{
+  id: 1,
+  msg: "Naz_Blogs",
+  title: "FullStack Blog Website",
+  des: "Fully functional Bogs website in which User can create and add Blogs with Authentication...",
+  img: "/web4.jpg",
+  iconLists: ["/next.svg", "/mongodb.svg", "/prisma.svg", "/firebase.svg", "/re.svg"],
+  link: "https://naz-blogs.vercel.app/",
 },]
 
 export const projects = [
