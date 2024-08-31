@@ -187,7 +187,7 @@ export const fullstack_projects = [{
   msg: "Naz_Blogs",
   title: "FullStack Blog Website",
   des: "Fully functional Bogs website in which User can create and add Blogs with Authentication...",
-  img: "/web4.jpg",
+  img: "/web5.jpg",
   iconLists: ["/next.svg", "/mongodb.svg", "/prisma.svg", "/firebase.svg", "/re.svg"],
   link: "https://naz-blogs.vercel.app/",
 },]
