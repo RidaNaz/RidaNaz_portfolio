@@ -1,12 +1,12 @@
-import { Socials } from "@//constants";
+import { Socials } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-2 lg:px-10 max-w-screen-2xl mx-auto">
-      <div className="gap-4 sm:gap-0 w-full h-full flex flex-row items-center justify-between m-auto">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between m-auto max-w-screen-2xl">
         <Link
           href="#web-developer"
           className="h-auto w-auto flex flex-row items-center"
@@ -24,37 +24,35 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <div className="w-[600px] h-full flex flex-row items-center justify-center">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200 text-sm sm:text-base gap-2">
-            <Link href="#skills" className="cursor-pointer">
+        <div className="flex-1 max-w-[600px] h-full flex flex-row items-center justify-center mx-4">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[15px] sm:px-[20px] py-[10px] rounded-full text-gray-200 text-[12px] sm:text-base gap-2 sm:gap-4">
+            <Link href="#skills" className="cursor-pointer hover:text-purple-400 transition">
               Skills
             </Link>
-            <Link href="#experience" className="cursor-pointer">
+            <Link href="#experience" className="cursor-pointer hover:text-purple-400 transition">
               Experience
             </Link>
-            <Link href="#portfolio" className="cursor-pointer">
+            <Link href="#portfolio" className="cursor-pointer hover:text-purple-400 transition">
               Portfolio
             </Link>
-            <Link href="#certificates" className="cursor-pointer">
+            <Link href="#certificates" className="cursor-pointer hover:text-purple-400 transition">
               Certificates
             </Link>
           </div>
         </div>
-        <div className="hidden lg:block">
-          <div className=" flex flex-row gap-5">
-            {Socials.map((social) => (
-              <Link href={social.link} key={social.name}>
-                <Image
-                  src={social.src}
-                  alt={social.name}
-                  key={social.name}
-                  width={social.width}
-                  height={social.height}
-                />
-              </Link>
-            ))
-            }
-          </div>
+
+        <div className="flex flex-row gap-3 sm:gap-5">
+          {Socials.map((social) => (
+            <Link href={social.link} key={social.name} className="hover:scale-110 transition">
+              <Image
+                src={social.src}
+                alt={social.name}
+                width={social.width}
+                height={social.height}
+                className="w-5 h-5 sm:w-6 sm:h-6"
+              />
+            </Link>
+          ))}
         </div>
       </div>
     </div>

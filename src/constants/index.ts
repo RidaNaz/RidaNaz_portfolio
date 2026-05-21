@@ -41,7 +41,7 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "Next js 15",
+    skill_name: "Next js 16",
     Image: "/next.png",
     width: 80,
     height: 80,
@@ -216,7 +216,7 @@ export const fullstack_projects = [
     msg: "Al_Wahab_Clothings",
     title: "Al Wahab Ecommerce Website",
     des: "Fully functional E-Commerce Next.js website in which I integrate authentication and payment method...",
-    img: "/web4.jpg",
+    img: "/alwahab-clothings.png",
     iconLists: ["/next.svg", "/sanity.svg", "/redux.svg", "/post.svg", "/stripe.svg"],
     link: "https://al-wahab-clothings.vercel.app",
   },

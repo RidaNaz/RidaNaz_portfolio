@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { WorkExperience } from "@//constants";
-import { Button } from "@//ui/MovingBorders";
+import { WorkExperience } from "@/constants";
+import { Button } from "@/ui/MovingBorders";
 import Image from "next/image";
 
 const Experience = () => {
@@ -26,7 +26,7 @@ const Experience = () => {
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
               <Image
                 src={card.thumbnail}
-                alt={card.thumbnail}
+                alt={card.title}
                 className="lg:w-32 md:w-20 w-16"
                 width={100}
                 height={100}
