@@ -9,8 +9,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rida Portfolio",
-  description: "This is my Portfolio", 
+  title: "Rida Naz | FullStack Developer & Agentic AI Engineer",
+  description: "Portfolio of Rida Naz, a specialized FullStack Developer and Agentic AI Engineer with 1.5+ years of experience in building production AI systems and agentic workflows.", 
   icons:{
     icon: ['/favicon.ico?v=4'],
     apple: ['/apple-touch-icon.png?v=4'],
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
         <StarsCanvas />
         <Navbar />

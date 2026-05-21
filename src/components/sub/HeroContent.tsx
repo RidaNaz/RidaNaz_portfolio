@@ -58,6 +58,9 @@ const HeroContent = () => {
           alt="work icons"
           height={500}
           width={500}
+          priority
+          loading="eager"
+          style={{ height: 'auto', width: 'auto' }}
         />
       </motion.div> 
     </motion.div>

@@ -1,56 +1,41 @@
+"use client";
 import React from "react";
-import { Button } from "@/ui/MovingBorders";
 import { CertificateCards } from "@/constants";
-import Image from "next/image";
+import CertificateCard from "../sub/CertificateCard";
+import { motion } from "framer-motion";
 
 const Certificates = () => {
   return (
-    <div id="certificates" className="-mt-6 w-full pb-28">
+    <div id="certificates" className="relative w-full py-20 px-6 overflow-hidden">
+      {/* Background Decorative Element */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[120px] -z-10" />
+      
+      <h1 className="text-center font-bold text-white text-[40px] mb-20 leading-tight">
+        Here&rsquo;s my{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+          CERTIFICATES
+        </span>
+      </h1>
 
-      <h1 className="text-center font-bold text-white text-[40px] py-20 mb-[15px] ">Here&rsquo;s my {" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600">CERTIFICATES</span>
-        </h1>
-
-      <div className="mt-6 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-        {CertificateCards.map((card) => (
-          <Button
-            key={card.id}
-            //   random duration will be fun , I think , may be not
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-
-              // background: "rgb(4,7,29)",
-              // backgroundColor:
-              //   "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              
-              // add this border radius to make it more rounded so that the moving border is more realistic
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-          >
-            <div className="flex lg:flex-row flex-row  sm:flex-col lg:items-center items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
-              <Image
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {CertificateCards.map((card, index) => (
+            <motion.div
+              key={card.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <CertificateCard
                 src={card.thumbnail}
-                alt={card.title}
-                className="lg:w-32 md:w-20 w-16 pb-2 lg:pb-0"
-                width={200}
-                height={200}
+                title={card.title}
+                description={card.desc}
+                badge={card.badge}
               />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
-                </h1>
-                <p className="hidden md:block text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
-                </p>
-              </div>
-            </div>
-          </Button>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );
