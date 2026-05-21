@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "@//ui/MovingBorders";
-import { CertificateCards } from "@//constants";
+import { Button } from "@/ui/MovingBorders";
+import { CertificateCards } from "@/constants";
 import Image from "next/image";
 
 const Certificates = () => {
@@ -35,10 +35,10 @@ const Certificates = () => {
             <div className="flex lg:flex-row flex-row  sm:flex-col lg:items-center items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
               <Image
                 src={card.thumbnail}
-                alt={card.thumbnail}
+                alt={card.title}
                 className="lg:w-32 md:w-20 w-16 pb-2 lg:pb-0"
-                width={1000}
-                height={1000}
+                width={200}
+                height={200}
               />
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
