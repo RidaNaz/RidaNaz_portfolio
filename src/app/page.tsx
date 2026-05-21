@@ -1,4 +1,5 @@
 import Certificates from "../components/main/Certificates";
+import Experience from "../components/main/Experience";
 import Hero from "../components/main/Hero";
 import RecentProjects from "../components/main/RecentProjects";
 import Services from "../components/main/Services";
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />
+        <Experience />
         <RecentProjects />
         <Services />
         <Certificates />

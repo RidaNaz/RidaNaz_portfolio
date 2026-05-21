@@ -14,35 +14,35 @@ const Services = () => {
             <div className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] items-center">
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <Button>
-                    <ServicesCard title="React.js Website" num="01" /></Button>
+                    <ServicesCard title="Agentic AI Solutions" num="01" description="Building production-grade autonomous agents and multi-agent systems using LangChain, LangGraph, and OpenAI SDK." /></Button>
                 </div>
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
                     <Button>
-                    <ServicesCard title="Next.js Website" num="02" />
+                    <ServicesCard title="AI Voice Agents" num="02" description="Developing low-latency voice AI systems with LiveKit, SIP, and custom STT/TTS pipelines for enterprise scaling." />
                 </Button>
                 </div>
                 
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="400">
                     <Button>
-                    <ServicesCard title="Fullstack Website" num="03" />
+                    <ServicesCard title="FullStack Development" num="03" description="Architecting modern web applications with Next.js, TypeScript, and high-performance backend systems." />
                 </Button>
                 </div>
                 
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
                     <Button>
-                    <ServicesCard title="Node Js API" num="04" />
+                    <ServicesCard title="RAG & Knowledge Bases" num="04" description="Implementing advanced Retrieval Augmented Generation (RAG) using vector and graph databases for intelligent context." />
                 </Button>
                 </div>
                 
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="400">
                     <Button>
-                    <ServicesCard title="MERN WebApp" num="05" />
+                    <ServicesCard title="API & MCP Integration" num="05" description="Connecting AI systems to real-world actions via REST APIs and Model Context Protocol (MCP) servers." />
                 </Button>
                 </div>
                 
                 <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="600">
                     <Button>
-                    <ServicesCard title="Bug Fixing" num="06" />
+                    <ServicesCard title="Scalable AI Infrastructure" num="06" description="Deploying AI workflows using Docker, Kubernetes, and Cloud platforms for high availability and performance." />
                 </Button>
                 </div>
                 

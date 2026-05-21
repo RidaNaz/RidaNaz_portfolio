@@ -19,15 +19,18 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="hidden md:block font-bold ml-[30px] text-gray-300">
-            FullStack Developer
+          <span className="hidden md:block font-bold ml-[10px] text-gray-300">
+            Rida Naz
           </span>
         </Link>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-center">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200 text-sm sm:text-base">
+        <div className="w-[600px] h-full flex flex-row items-center justify-center">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200 text-sm sm:text-base gap-2">
             <Link href="#skills" className="cursor-pointer">
               Skills
+            </Link>
+            <Link href="#experience" className="cursor-pointer">
+              Experience
             </Link>
             <Link href="#portfolio" className="cursor-pointer">
               Portfolio
