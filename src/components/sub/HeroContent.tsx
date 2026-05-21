@@ -40,16 +40,16 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="text-lg text-gray-400 my-5n max-w-[600px]"
         >
-         I &apos;m a Frontend Web Developer with high skills in website development. Checkout my Skills, Certificates and Portfolio.
+         I &apos;m a FullStack Developer with high skills in website development. Checkout my Skills, Certificates and Portfolio.
 
         </motion.p>
-        <motion.a
+        <motion.div
           variants={slideInFromLeft(1)}
           className=" mt-3 py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         ><Link href ="https://github.com/RidaNaz" className = "cursor-poniter flex flex-row gap-4 justify-center pt-1">
           <RxGithubLogo /><span className="-mt-1">Github Profile</span>
           </Link>
-        </motion.a>
+        </motion.div>
       </div>
       <motion.div
         variants={slideInFromRight(0.5)}

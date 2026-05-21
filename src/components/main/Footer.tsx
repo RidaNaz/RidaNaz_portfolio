@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
                 <br />
                 <div className="mb-[10px] text-[15px] text-center mt-12">
-                    &copy; Web Developer 2024 Inc. All rights reserved
+                    &copy; FullStack Developer 2025 Inc. All rights reserved
                 </div>
             </div>
         </div>
