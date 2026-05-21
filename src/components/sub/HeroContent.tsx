@@ -22,7 +22,7 @@ const HeroContent = () => {
           className='Welcome-box py-[8px] px-[7px] border-[#7042f88b] opacity-[0.9]'>
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-          Future Cloud Native AI Engineer
+          FullStack Developer · Agentic AI Engineer
           </h1>
         </motion.div>
         <motion.div
@@ -30,9 +30,9 @@ const HeroContent = () => {
           className='flex flex-col gap-6 mt-6 text-4xl sm:text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
         >
           <span>
-            Here&rsquo;s
-            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600"> Rida Naz </span>
-            Project Experience
+            Empowering Future with
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600"> Agentic AI </span>
+            & FullStack Mastery
           </span>
         </motion.div>
 
@@ -40,14 +40,13 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="text-lg text-gray-400 my-5n max-w-[600px]"
         >
-         I &apos;m a FullStack Developer with high skills in website development. Checkout my Skills, Certificates and Portfolio.
-
+         I&apos;m a FullStack Developer and Agentic AI Engineer with 1.5+ years of experience building production AI systems. SPECIALIZED IN Agentic Workflows, Voice Agents, and Scalable FullStack Applications.
         </motion.p>
         <motion.div
           variants={slideInFromLeft(1)}
           className=" mt-3 py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        ><Link href ="https://github.com/RidaNaz" className = "cursor-poniter flex flex-row gap-4 justify-center pt-1">
-          <RxGithubLogo /><span className="-mt-1">Github Profile</span>
+        ><Link href ="https://github.com/RidaNaz" className = "cursor-pointer flex flex-row gap-4 justify-center pt-1">
+          <RxGithubLogo className="w-6 h-6" /><span className="-mt-1">Github Profile</span>
           </Link>
         </motion.div>
       </div>

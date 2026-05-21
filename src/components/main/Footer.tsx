@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
                 <br />
                 <div className="mb-[10px] text-[15px] text-center mt-12">
-                    &copy; FullStack Developer 2025 Inc. All rights reserved
+                    &copy; Rida Naz | Agentic AI Engineer 2026. All rights reserved
                 </div>
             </div>
         </div>
