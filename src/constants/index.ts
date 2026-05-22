@@ -5,6 +5,7 @@ export const CertificateCards = [
     desc: "Intensive curriculum covering LLMs, RAG pipelines, multi-agent systems, and cloud deployment.",
     className: "md:col-span-2",
     thumbnail: "/agentic-ai-developer.png",
+    badge: "https://www.credly.com/org/piaic/badge/certified-agentic-ai-engineer",
   },
   {
     id: 2,
@@ -12,27 +13,22 @@ export const CertificateCards = [
     desc: "Mastered prompt engineering, context engineering, and RAG pipelines.",
     className: "md:col-span-2",
     thumbnail: "/prompt-context-engineering.png",
+    badge: "https://www.credly.com/org/piaic/badge/certified-prompt-context-engineer",
   },
 ];
 
 export const Skill_data = [
   {
-    skill_name: "Node js",
-    Image: "/node-js.png",
-    width: 70,
-    height: 70,
-  },
-  {
     skill_name: "Java Script",
     Image: "/js.png",
-    width: 65,
-    height: 65,
+    width: 80,
+    height: 80,
   },
   {
     skill_name: "Type Script",
     Image: "/ts.png",
-    width: 70,
-    height: 70,
+    width: 80,
+    height: 80,
   },
   {
     skill_name: "React",
@@ -47,22 +43,70 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "Postgres",
-    Image: "/postgres.png",
+    skill_name: "Tailwind Css",
+    Image: "/tailwind.png",
     width: 80,
     height: 80,
   },
   {
+    skill_name: "Framer Motion",
+    Image: "/fm.svg",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Node js",
+    Image: "/node-js.png",
+    width: 70,
+    height: 70,
+  },
+];
+
+export const skill_data2 = [
+  {
     skill_name: "Python",
     Image: "/python.png",
-    width: 110,
-    height: 110,
+    width: 80,
+    height: 80,
   },
   {
     skill_name: "Fast Api",
     Image: "/FastAPI.png",
-    width: 75,
-    height: 75,
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "LangChain",
+    Image: "/langchain.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "LangGraph",
+    Image: "/langgraph.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "OpenAI SDK",
+    Image: "/openai.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Livekit",
+    Image: "/livekit.png",
+    width: 80,
+    height: 80,
+  },
+];
+
+export const skill_data3 = [
+  {
+    skill_name: "Postgres",
+    Image: "/postgres.png",
+    width: 80,
+    height: 80,
   },
   {
     skill_name: "Mongo db",
@@ -70,42 +114,6 @@ export const Skill_data = [
     width: 80,
     height: 80,
   },
-]
-
-export const skill_data2 = [
-  {
-    skill_name: "LangChain",
-    Image: "/mainIconsdark.svg", // Placeholder as specific icon not in public/
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "LangGraph",
-    Image: "/mainIconsdark.svg",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    Image: "/fm.svg",
-    width: 78,
-    height: 78,
-  },
-  {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
-    width: 100,
-    height: 100,
-  },
-  {
-    skill_name: "Prisma",
-    Image: "/prisma.svg",
-    width: 75,
-    height: 75,
-  },
-];
-
-export const skill_data3 = [
   {
     skill_name: "Docker",
     Image: "/docker.png",
@@ -113,17 +121,17 @@ export const skill_data3 = [
     height: 80,
   },
   {
-    skill_name: "Apache Kafka",
-    Image: "/mainIconsdark.svg",
-    width: 70,
-    height: 70,
+    skill_name: "Google Cloud",
+    Image: "/gcp.png",
+    width: 80,
+    height: 80,
   },
   {
-    skill_name: "Google Cloud",
-    Image: "/mainIconsdark.svg",
-    width: 70,
-    height: 70,
-  },
+    skill_name: "MCP Servers",
+    Image: "/mcp.png",
+    width: 80,
+    height: 80,
+  }
 ]
 
 export const Socials = [
@@ -165,18 +173,18 @@ export const generating_ai_projects = [
 export const agentic_projects = [
   {
     id: 1,
-    msg: "TalkifAI_Lead",
+    msg: "TalkifAI",
     title: "TalkifAI - Voice Agent Platform",
-    des: "No-code/developer platform for creating, deploying, and scaling AI voice agents with sub-second latency.",
+    des: "Founding member of a no-code/developer platform for creating, deploying, and scaling AI voice agents with sub-second latency. Architected LiveKit + SIP infrastructure and built BYOC abstraction.",
     img: "/talkifai.png",
     iconLists: ["/python.png", "/FastAPI.png", "/postgres.png", "/docker.png", "/next.svg"],
     link: "https://talkifai.dev",
   },
   {
     id: 2,
-    msg: "Digital_FTE",
+    msg: "AI_Employee",
     title: "Personal AI Employee (Digital FTE)",
-    des: "Autonomous 24/7 Digital FTE on Azure using Claude Code and MCP to monitor and execute actions across channels.",
+    des: "Autonomous 24/7 Digital FTE on Azure using Claude Code and MCP to monitor and execute actions across channels. Reduces cost per task significantly while ensuring 24/7 availability.",
     img: "/ai-employee.png",
     iconLists: ["/python.png", "/next.svg", "/ts.svg"],
     link: "https://www.linkedin.com/posts/ridanaz67_ai-agentengineering-claudecode-ugcPost-7431372687022886913-2C_k",
@@ -185,7 +193,7 @@ export const agentic_projects = [
     id: 3,
     msg: "TalkifAI_FTE",
     title: "TalkifAI Customer Success FTE",
-    des: "Production-grade 24/7 AI support agent with 6-step agentic pipeline and event-driven architecture.",
+    des: "Production-grade 24/7 AI support agent with a 6-step agentic pipeline and event-driven architecture using Kafka for async multi-channel message streaming.",
     img: "/talkifai-fte.png",
     iconLists: ["/next.svg", "/python.png", "/docker.png"],
     link: "https://www.linkedin.com/posts/ridanaz67_aiagents-openai-kafka-ugcPost-7446534025202020352-iR86",
@@ -194,7 +202,7 @@ export const agentic_projects = [
     id: 4,
     msg: "Agentic_Todo",
     title: "AI-Powered Todo App with MCP",
-    des: "Fullstack web app with stateless AI chat interface using MCP tools for natural language task management.",
+    des: "Fullstack web app with stateless AI chat interface using MCP tools for natural language task management. Built with FastAPI, SQLModel, and Neon PostgreSQL.",
     img: "/agentic-todo.png",
     iconLists: ["/next.svg", "/FastAPI.png", "/postgres.png"],
     link: "https://agentic-todo.ridanaz.com",
@@ -203,7 +211,7 @@ export const agentic_projects = [
     id: 5,
     msg: "AI_Native_Book",
     title: "AI-Native Book: Physical AI",
-    des: "Technical textbook on Physical AI & Humanoid Robotics with an integrated RAG chatbot.",
+    des: "Technical textbook on Physical AI & Humanoid Robotics with an integrated RAG chatbot for querying book content. Built with Docusaurus and Claude Code.",
     img: "/aibook.png",
     iconLists: ["/next.svg", "/ts.svg", "/re.svg"],
     link: "https://ainative-book.ridanaz.com",
@@ -238,15 +246,15 @@ export const WorkExperience = [
     title: "COO & Lead Engineer",
     company: "TalkifAI",
     duration: "July 2024 – Present",
-    desc: "Architected self-hosted LiveKit + SIP infrastructure on GCP. Built BYOC layer and Batch Calling features for voice agents.",
-    thumbnail: "/mainIconsdark.svg",
+    desc: "Founding member building a no-code voice agent platform. Architected self-hosted LiveKit + SIP on GCP. Built BYOC layer, Batch Calling, and automated RAG Knowledge Base indexing.",
+    thumbnail: "/talkifai-logo.png",
   },
   {
     id: 2,
     title: "Full Stack Developer",
     company: "XponentialAI",
     duration: "May 2025 – Jan 2026",
-    desc: "Built JungleMug, an Amazon listing automation platform. Integrated Amazon SP-API and automated image processing workflows.",
-    thumbnail: "/mainIconsdark.svg",
+    desc: "Built JungleMug, an end-to-end Amazon listing automation platform. Integrated AI content generation, automated Photoshop scripting for mockups, and Amazon SP-API for direct listings.",
+    thumbnail: "/xponential-logo.png",
   }
 ];

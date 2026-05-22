@@ -25,7 +25,7 @@ const ProjectSection = ({ title, projects }: { title: string; projects: any[] })
                   className="relative w-full h-full overflow-hidden lg:rounded-xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <Image src="/bg.png" alt="bgimg" fill className="object-cover opacity-50" />
+                  <Image src="/bg.png" alt="bgimg" fill className="object-cover opacity-50" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
                 <Image
                   src={item.img}
@@ -33,6 +33,7 @@ const ProjectSection = ({ title, projects }: { title: string; projects: any[] })
                   height={500}
                   alt="cover"
                   className="z-10 absolute bottom-0 rounded-xl object-cover w-full h-full"
+                  style={{ height: 'auto' }}
                 />
               </div>
 
@@ -60,7 +61,7 @@ const ProjectSection = ({ title, projects }: { title: string; projects: any[] })
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <Image src={icon} alt="icon" width={100} height={100} className="p-2" />
+                      <Image src={icon} alt="icon" width={100} height={100} className="p-2" style={{ height: 'auto' }} />
                     </div>
                   ))}
                 </div>
