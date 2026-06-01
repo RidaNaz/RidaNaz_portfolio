@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     apple: ['/apple-touch-icon.png?v=4'],
     shortcut: ['/apple-touch-icon.png']
   },
+  metadataBase: new URL("https://www.ridanaz.com"),
+  alternates: {
+    canonical: "https://www.ridanaz.com",
+  },
   manifest: '/site.webmanifest'
 };
 
