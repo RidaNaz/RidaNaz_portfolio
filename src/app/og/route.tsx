@@ -1,12 +1,10 @@
-// src/app/og/route.tsx
 import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
 
-export const runtime = "nodejs"; // changed from edge — needed to read local files
+export const runtime = "nodejs";
 
 export async function GET() {
-  // Read logo from public folder
   const logoPath = join(process.cwd(), "public", "Ridalogo.png");
   const logoData = readFileSync(logoPath);
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
@@ -20,8 +18,9 @@ export async function GET() {
           height: "630px",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
+          alignItems: "center",
           justifyContent: "center",
+          textAlign: "center",
           padding: "80px",
           fontFamily: "sans-serif",
           position: "relative",
@@ -40,11 +39,25 @@ export async function GET() {
           }}
         />
 
+        {/* Purple glow effect bottom left */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-100px",
+            left: "-100px",
+            width: "400px",
+            height: "400px",
+            background: "radial-gradient(circle, #712FFF33 0%, transparent 70%)",
+            borderRadius: "50%",
+          }}
+        />
+
         {/* Logo + domain row */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
             gap: "16px",
             marginBottom: "40px",
           }}
@@ -85,7 +98,14 @@ export async function GET() {
         </div>
 
         {/* Tags */}
-        <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "16px",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           {["Voice AI", "Agentic Workflows", "Next.js", "LiveKit"].map((tag) => (
             <div
               key={tag}
@@ -111,7 +131,7 @@ export async function GET() {
             left: "0",
             width: "100%",
             height: "4px",
-            background: "linear-gradient(90deg, #712FFF, transparent)",
+            background: "linear-gradient(90deg, transparent, #712FFF, transparent)",
           }}
         />
       </div>
