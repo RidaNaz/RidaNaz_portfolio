@@ -22,7 +22,10 @@ export const metadata: Metadata = {
     "AI Engineer Pakistan",
   ],
   icons: {
-    icon: ["/favicon.ico?v=4"],
+    icon: [
+      { url: "/favicon.ico?v=4" },
+      { url: "/Ridalogo1.png", type: "image/png", sizes: "192x192" },
+    ],
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["/apple-touch-icon.png"],
   },
