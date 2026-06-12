@@ -65,10 +65,11 @@ const jsonLd = {
   name: "Rida Naz",
   url: "https://www.ridanaz.com",
   jobTitle: "Full Stack Developer & Agentic AI Engineer",
-  description: "Full Stack Developer and Agentic AI Engineer specializing in Voice AI agents, Agentic workflows, and scalable SaaS platforms.",
+  description:
+    "Full Stack Developer and Agentic AI Engineer specializing in Voice AI agents, Agentic workflows, and scalable SaaS platforms.",
   knowsAbout: [
     "Voice AI",
-    "Agentic Workflows", 
+    "Agentic Workflows",
     "Next.js",
     "FastAPI",
     "LiveKit",
@@ -103,11 +104,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      </head>
+      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
         <StarsCanvas />
         <Navbar />
         {children}
