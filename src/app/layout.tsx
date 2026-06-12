@@ -65,9 +65,21 @@ const jsonLd = {
   name: "Rida Naz",
   url: "https://www.ridanaz.com",
   jobTitle: "Full Stack Developer & Agentic AI Engineer",
+  description: "Full Stack Developer and Agentic AI Engineer specializing in Voice AI agents, Agentic workflows, and scalable SaaS platforms.",
+  knowsAbout: [
+    "Voice AI",
+    "Agentic Workflows", 
+    "Next.js",
+    "FastAPI",
+    "LiveKit",
+    "LangGraph",
+    "MCP Servers",
+    "Multi-agent Systems",
+  ],
   worksFor: {
     "@type": "Organization",
     name: "TalkifAI",
+    url: "https://talkifai.dev",
   },
   address: {
     "@type": "PostalAddress",
@@ -78,6 +90,10 @@ const jsonLd = {
     "https://linkedin.com/in/ridanaz67",
     "https://github.com/RidaNaz",
   ],
+  alumniOf: {
+    "@type": "Organization",
+    name: "PIAIC/GIAIC",
+  },
 };
 
 export default function RootLayout({

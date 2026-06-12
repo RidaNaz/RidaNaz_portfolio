@@ -1,0 +1,29 @@
+# Rida Naz - Full Profile
+
+Rida Naz is a Full Stack Developer and Agentic AI Engineer with 1.5+ years 
+of experience building production AI systems based in Karachi, Pakistan.
+
+## Current Role
+Founding team member and Lead Engineer at TalkifAI — an early-stage AI voice 
+agent platform built from scratch. Responsible for core infrastructure including 
+BYOC telephony (Twilio, Telnyx, SIP), LiveKit voice pipeline, multi-tenant 
+architecture, and deployment on Google Cloud.
+
+## Technical Stack
+Next.js, FastAPI, PostgreSQL, Docker, Google Cloud, LiveKit, SIP/WebRTC,
+LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers
+
+## Specializations
+- Voice AI agents and real-time communication
+- Agentic workflows and multi-agent systems
+- Full stack SaaS platforms
+- MCP server integration
+
+## Education & Community
+- Pursuing Certified Agentic AI Engineer — PIAIC/GIAIC
+- Active in Karachi AI/tech community through GIAIC hackathons
+
+## Contact
+- Website: https://www.ridanaz.com
+- GitHub: https://github.com/RidaNaz
+- LinkedIn: https://linkedin.com/in/ridanaz67

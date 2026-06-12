@@ -1,0 +1,15 @@
+# Rida Naz - FullStack Developer & Agentic AI Engineer
+
+## About
+Rida Naz is a Full Stack Developer and Agentic AI Engineer based in Karachi, Pakistan.
+Founding team member and Lead Engineer at TalkifAI, an AI voice agent platform.
+Specialized in Voice AI, Agentic Workflows, LiveKit, Next.js, FastAPI, and LangGraph.
+
+## Links
+- Portfolio: https://www.ridanaz.com
+- GitHub: https://github.com/RidaNaz
+- LinkedIn: https://linkedin.com/in/ridanaz67
+
+## Projects
+- TalkifAI: AI voice agent platform with BYOC telephony support
+- AI Native Book: Physical AI and humanoid robotics textbook
