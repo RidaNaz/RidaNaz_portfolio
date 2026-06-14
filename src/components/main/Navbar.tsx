@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto max-w-screen-2xl">
         <Link
-          href="#web-developer"
+          href="/"
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
@@ -26,17 +26,20 @@ const Navbar = () => {
 
         <div className="flex-1 max-w-[600px] h-full flex flex-row items-center justify-center mx-4">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[15px] sm:px-[20px] py-[10px] rounded-full text-gray-200 text-[12px] sm:text-base gap-2 sm:gap-4">
-            <Link href="#skills" className="cursor-pointer hover:text-purple-400 transition">
+            <Link href="/skills" className="cursor-pointer hover:text-purple-400 transition">
               Skills
             </Link>
-            <Link href="#experience" className="cursor-pointer hover:text-purple-400 transition">
-              Experience
+            <Link href="/about" className="cursor-pointer hover:text-purple-400 transition">
+              About
             </Link>
-            <Link href="#portfolio" className="cursor-pointer hover:text-purple-400 transition">
+            <Link href="/portfolio" className="cursor-pointer hover:text-purple-400 transition">
               Portfolio
             </Link>
-            <Link href="#certificates" className="cursor-pointer hover:text-purple-400 transition">
-              Certificates
+            <Link href="/services" className="cursor-pointer hover:text-purple-400 transition">
+              Services
+            </Link>
+            <Link href="/contact" className="cursor-pointer hover:text-purple-400 transition">
+              Contact
             </Link>
           </div>
         </div>

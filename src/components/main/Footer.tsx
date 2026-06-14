@@ -60,14 +60,18 @@ const Footer = () => {
                     </div>
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[18px] mb-4">About</div>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-
-                            <span className="text-[15px] ml-[6px]">Become Sponsor</span>
-                        </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-
-                            <span className="text-[15px] ml-[6px]">Learning about me</span>
-                        </p>
+                        <Link href="/about" className="flex flex-row items-center my-[15px] cursor-pointer">
+                            <span className="text-[15px] ml-[6px]">About Rida</span>
+                        </Link>
+                        <Link href="/services" className="flex flex-row items-center my-[15px] cursor-pointer">
+                            <span className="text-[15px] ml-[6px]">Services</span>
+                        </Link>
+                        <Link href="/resume" className="flex flex-row items-center my-[15px] cursor-pointer">
+                            <span className="text-[15px] ml-[6px]">Resume / CV</span>
+                        </Link>
+                        <Link href="/contact" className="flex flex-row items-center my-[15px] cursor-pointer">
+                            <span className="text-[15px] ml-[6px]">Work With Me</span>
+                        </Link>
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
 
                             <span className="text-[15px] ml-[6px]">rnaz3414@gmail.com</span>
