@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const routes = ["", "/about", "/services", "/portfolio", "/resume", "/contact", "/skills"];
+
   return [
-    {
-      url: "https://www.ridanaz.com",
+    ...routes.map((route) => ({
+      url: `https://www.ridanaz.com${route}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 1,
-    },
+      priority: route === "" ? 1 : 0.8,
+    })),
   ];
 }

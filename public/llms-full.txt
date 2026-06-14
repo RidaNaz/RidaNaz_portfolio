@@ -18,6 +18,23 @@ LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers
 - Agentic workflows and multi-agent systems
 - Full stack SaaS platforms
 - MCP server integration
+- RAG knowledge systems
+- Agentic SEO and AI visibility
+
+## Website Pages
+- About: https://www.ridanaz.com/about
+- Services: https://www.ridanaz.com/services
+- Portfolio: https://www.ridanaz.com/portfolio
+- Skills: https://www.ridanaz.com/skills
+- Resume/CV: https://www.ridanaz.com/resume
+- Contact: https://www.ridanaz.com/contact
+
+## Service Areas
+- Agentic AI systems with LangGraph, OpenAI SDK, MCP, and API tools
+- Voice AI agents with LiveKit, SIP, WebRTC, Twilio, and Telnyx
+- Full stack SaaS applications with Next.js, TypeScript, FastAPI, and PostgreSQL
+- Retrieval Augmented Generation and knowledge base systems
+- Technical SEO, structured metadata, llms.txt, and AI-readable portfolio architecture
 
 ## Education & Community
 - Pursuing Certified Agentic AI Engineer — PIAIC/GIAIC

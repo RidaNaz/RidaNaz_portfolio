@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -10,49 +10,88 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { RxGithubLogo } from "react-icons/rx";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 const HeroContent = () => {
   return (
-    <motion.div initial="hidden" animate="visible" className='flex flex-row items-center px-20 mt-36 w-full z-[20]'>
-      <div className='h-full w-96 sm:w-full flex flex-col gap-5 justify-center m-auto text-start -mx-12 sm:-mx-0'>
-
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      className="z-[20] mt-36 flex w-full flex-row items-center px-6 sm:px-10 lg:px-20"
+    >
+      <div className="m-auto flex h-full w-96 flex-col justify-center gap-5 text-start -mx-12 sm:w-full sm:-mx-0">
         <motion.div
           variants={slideInFromTop}
-          className='Welcome-box py-[8px] px-[7px] border-[#7042f88b] opacity-[0.9]'>
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          className="Welcome-box border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9]"
+        >
+          <SparklesIcon className="mr-[10px] h-5 w-5 text-[#b49bff]" />
           <h1 className="Welcome-text text-[13px]">
-          FullStack Developer · Agentic AI Engineer
+            Full Stack Developer | Agentic AI Engineer
           </h1>
         </motion.div>
+
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className='flex flex-col gap-6 mt-6 text-4xl sm:text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
+          className="mt-6 flex h-auto w-auto max-w-[700px] flex-col gap-6 text-4xl font-bold text-white sm:text-6xl"
         >
           <span>
-            Empowering Future with
-            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600"> Agentic AI </span>
-            & FullStack Mastery
+            Building Voice AI,
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600">
+              {" "}
+              Agentic Workflows{" "}
+            </span>
+            & Full Stack SaaS
           </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.5)}
-          className="text-lg text-gray-400 my-5n max-w-[600px]"
+          className="max-w-[650px] text-lg leading-8 text-gray-400"
         >
-         I&apos;m a FullStack Developer and Agentic AI Engineer with 1.5+ years of experience building production AI systems. SPECIALIZED IN Agentic Workflows, Voice Agents, and Scalable FullStack Applications.
+          I&apos;m Rida Naz, a Full Stack Developer and Agentic AI Engineer with
+          1.5+ years of experience building production AI systems, Voice AI
+          agents, RAG workflows, and scalable web platforms.
         </motion.p>
+
         <motion.div
           variants={slideInFromLeft(1)}
-          className=" mt-3 py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        ><Link href ="https://github.com/RidaNaz" className = "cursor-pointer flex flex-row gap-4 justify-center pt-1">
-          <RxGithubLogo className="w-6 h-6" /><span className="-mt-1">Github Profile</span>
+          className="mt-3 flex flex-wrap gap-3"
+        >
+          <Link
+            href="/services"
+            className="button-primary rounded-lg px-5 py-3 text-center font-semibold text-white"
+          >
+            View Services
+          </Link>
+          <Link
+            href="/resume"
+            className="rounded-lg border border-white/20 px-5 py-3 text-center font-semibold text-white transition hover:border-pink-300/60"
+          >
+            Resume / CV
+          </Link>
+          <Link
+            href="https://github.com/RidaNaz"
+            target="_blank"
+            className="button-primary flex cursor-pointer flex-row justify-center gap-3 rounded-lg px-5 py-3 text-white"
+          >
+            <RxGithubLogo className="h-6 w-6" />
+            <span>GitHub</span>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/ridanaz67/"
+            target="_blank"
+            className="button-primary flex cursor-pointer flex-row justify-center gap-3 rounded-lg px-5 py-3 text-white"
+          >
+            <RxLinkedinLogo className="h-6 w-6" />
+            <span>LinkedIn</span>
           </Link>
         </motion.div>
       </div>
+
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="hidden -mr-10 lg:block w-full h-full flex justify-center items-center">
+        className="-mr-10 hidden h-full w-full justify-center lg:flex"
+      >
         <Image
           src="/mainIconsdark.svg"
           alt="work icons"
@@ -60,11 +99,11 @@ const HeroContent = () => {
           width={500}
           priority
           loading="eager"
-          style={{ height: 'auto', width: 'auto' }}
+          style={{ height: "auto", width: "auto" }}
         />
-      </motion.div> 
+      </motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default HeroContent
+export default HeroContent;
