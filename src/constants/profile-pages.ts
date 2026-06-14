@@ -76,36 +76,111 @@ export const skillGroups = [
     description:
       "Building responsive, production-quality interfaces with a focus on clarity, accessibility, and performance.",
     skills: ["Next.js 16", "React", "TypeScript", "JavaScript", "Tailwind CSS", "Framer Motion"],
+    strengths: [
+      "App Router architecture",
+      "Responsive dashboards",
+      "SEO-ready pages",
+      "Accessible UI patterns",
+    ],
   },
   {
     title: "Backend & APIs",
     description:
       "Designing backend systems that support AI products, SaaS workflows, and data-driven applications.",
     skills: ["Python", "FastAPI", "Node.js", "REST APIs", "SQLModel", "PostgreSQL"],
+    strengths: [
+      "API design",
+      "Database modeling",
+      "Background workflows",
+      "Integration services",
+    ],
   },
   {
     title: "Agentic AI",
     description:
       "Creating agents that use tools, follow workflows, retrieve knowledge, and operate across real systems.",
     skills: ["LangGraph", "LangChain", "OpenAI SDK", "MCP Servers", "RAG", "Multi-agent Systems"],
+    strengths: [
+      "Tool-calling agents",
+      "Multi-step workflows",
+      "RAG pipelines",
+      "Evaluation-aware design",
+    ],
   },
   {
     title: "Voice AI Infrastructure",
     description:
       "Engineering real-time voice experiences with telephony, streaming, and conversational AI pipelines.",
     skills: ["LiveKit", "SIP", "WebRTC", "Twilio", "Telnyx", "STT/TTS Pipelines"],
+    strengths: [
+      "Low-latency voice flows",
+      "BYOC telephony",
+      "SIP routing",
+      "Conversation pipelines",
+    ],
   },
   {
     title: "Cloud & Data",
     description:
       "Shipping reliable applications with practical deployment, storage, and operational foundations.",
     skills: ["Docker", "Google Cloud", "MongoDB", "PostgreSQL", "Neon", "Kubernetes"],
+    strengths: [
+      "Containerized services",
+      "Cloud deployment",
+      "Data persistence",
+      "Scalable foundations",
+    ],
   },
   {
     title: "Product & Growth",
     description:
       "Connecting technical implementation with product outcomes, search visibility, and user workflows.",
     skills: ["Agentic SEO", "Technical SEO", "Schema.org", "Product Thinking", "Documentation", "AI UX"],
+    strengths: [
+      "AI-readable content",
+      "Metadata strategy",
+      "Product clarity",
+      "Documentation systems",
+    ],
+  },
+];
+
+export const skillHighlights = [
+  {
+    label: "Core Stack",
+    value: "Next.js + FastAPI",
+    note: "Frontend, APIs, dashboards, and production web apps.",
+  },
+  {
+    label: "AI Focus",
+    value: "Agents + Voice",
+    note: "LangGraph, MCP, LiveKit, SIP, and RAG workflows.",
+  },
+  {
+    label: "Shipping Style",
+    value: "Product-minded",
+    note: "Clean UX, SEO, automation, and reliable deployment.",
+  },
+];
+
+export const skillWorkflows = [
+  {
+    title: "Voice Agent Platform Work",
+    tools: ["LiveKit", "SIP", "FastAPI", "PostgreSQL", "Docker", "Google Cloud"],
+    result:
+      "Built infrastructure for real-time AI voice conversations, BYOC telephony, and scalable platform features.",
+  },
+  {
+    title: "Agentic Product Work",
+    tools: ["LangGraph", "OpenAI SDK", "MCP", "RAG", "Python", "Next.js"],
+    result:
+      "Created tool-using AI workflows that retrieve context, call APIs, and support user-facing product flows.",
+  },
+  {
+    title: "Full Stack SaaS Work",
+    tools: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "PostgreSQL", "REST APIs"],
+    result:
+      "Shipped responsive interfaces, backend services, automations, and integrations for practical business use cases.",
   },
 ];
 
