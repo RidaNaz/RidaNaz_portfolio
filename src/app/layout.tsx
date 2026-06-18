@@ -34,12 +34,22 @@ export const metadata: Metadata = {
     canonical: "https://www.ridanaz.com",
   },
   manifest: "/site.webmanifest",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Rida Naz | FullStack Developer & Agentic AI Engineer",
     description:
       "Specialized in Voice AI, Agentic Workflows, and Scalable FullStack Applications.",
     url: "https://www.ridanaz.com",
-    siteName: "Rida Naz Portfolio",
+    siteName: "Rida Naz",
     type: "website",
     images: [
       {
@@ -81,6 +91,11 @@ const jsonLd = {
     "@type": "Organization",
     name: "TalkifAI",
     url: "https://talkifai.dev",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Rida Naz",
+    url: "https://www.ridanaz.com",
   },
   address: {
     "@type": "PostalAddress",
