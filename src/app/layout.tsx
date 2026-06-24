@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Cedarville_Cursive } from "next/font/google";
 import "./globals.css";
-import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar"
 import Footer from "../components/main/Footer";
 import Script from "next/script";
+import A11yFixer from "@/components/main/A11yFixer";
+import StarsCanvas from "@/components/main/ClientStarsCanvas";
 
 const inter = Inter({ subsets: ["latin"] });
+const cedarville = Cedarville_Cursive({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-cedarville",
+});
 
 export const metadata: Metadata = {
   title: "Rida Naz | FullStack Developer & Agentic AI Engineer",
@@ -125,7 +131,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
+      <body className={`${inter.className} ${cedarville.variable} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
+        <A11yFixer />
         <StarsCanvas />
         <Navbar />
         {children}
@@ -143,7 +150,7 @@ export default function RootLayout({
             };
           `}
         </Script>
-        <Script src="https://talkifai.dev/widget.js" strategy="afterInteractive" />
+        <Script src="https://talkifai.dev/widget.js" strategy="lazyOnload" />
       </body>
     </html>
   );

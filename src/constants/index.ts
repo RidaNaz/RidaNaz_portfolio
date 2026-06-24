@@ -77,25 +77,25 @@ export const skill_data2 = [
   },
   {
     skill_name: "LangChain",
-    Image: "/langchain.png",
+    Image: "/langchain.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "LangGraph",
-    Image: "/langgraph.png",
+    Image: "/langgraph.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "OpenAI SDK",
-    Image: "/openai.png",
+    Image: "/openai.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Livekit",
-    Image: "/livekit.png",
+    Image: "/livekit.svg",
     width: 80,
     height: 80,
   },
@@ -122,13 +122,13 @@ export const skill_data3 = [
   },
   {
     skill_name: "Google Cloud",
-    Image: "/gcp.png",
+    Image: "/gcp.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "MCP Servers",
-    Image: "/mcp.png",
+    Image: "/mcp.svg",
     width: 80,
     height: 80,
   }

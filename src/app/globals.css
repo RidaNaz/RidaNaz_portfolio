@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .cursive {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: var(--font-cedarville), cursive;
 }
 
 .Welcome-text {
@@ -90,4 +89,50 @@ html {
 .custom-class div,
 .custom-class canvas {
   pointer-events: none !important;
+}
+
+/* Optimize LCP & FCP with native CSS animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-left {
+  animation: slideInFromLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-right {
+  animation: slideInFromRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-top {
+  animation: slideInFromTop 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

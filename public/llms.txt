@@ -6,15 +6,15 @@ Founding team member and Lead Engineer at TalkifAI, an AI voice agent platform.
 Specialized in Voice AI, Agentic Workflows, LiveKit, Next.js, FastAPI, and LangGraph.
 
 ## Links
-- Portfolio: https://www.ridanaz.com
-- About: https://www.ridanaz.com/about
-- Services: https://www.ridanaz.com/services
-- Portfolio: https://www.ridanaz.com/portfolio
-- Skills: https://www.ridanaz.com/skills
-- Resume/CV: https://www.ridanaz.com/resume
-- Contact: https://www.ridanaz.com/contact
-- GitHub: https://github.com/RidaNaz
-- LinkedIn: https://linkedin.com/in/ridanaz67
+- [Portfolio](https://www.ridanaz.com)
+- [About](https://www.ridanaz.com/about)
+- [Services](https://www.ridanaz.com/services)
+- [Portfolio](https://www.ridanaz.com/portfolio)
+- [Skills](https://www.ridanaz.com/skills)
+- [Resume/CV](https://www.ridanaz.com/resume)
+- [Contact](https://www.ridanaz.com/contact)
+- [GitHub](https://github.com/RidaNaz)
+- [LinkedIn](https://linkedin.com/in/ridanaz67)
 
 ## Services
 - Agentic AI systems
@@ -25,5 +25,5 @@ Specialized in Voice AI, Agentic Workflows, LiveKit, Next.js, FastAPI, and LangG
 - Agentic SEO and AI visibility
 
 ## Projects
-- TalkifAI: AI voice agent platform with BYOC telephony support
-- AI Native Book: Physical AI and humanoid robotics textbook
+- [TalkifAI](https://talkifai.dev): AI voice agent platform with BYOC telephony support
+- [AI Native Book](https://ainative-book.ridanaz.com): Physical AI and humanoid robotics textbook

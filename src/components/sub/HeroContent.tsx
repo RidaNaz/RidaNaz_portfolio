@@ -1,12 +1,4 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,25 +6,21 @@ import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 const HeroContent = () => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      className="z-[20] mt-36 flex w-full flex-row items-center px-6 sm:px-10 lg:px-20"
-    >
+    <div className="z-[20] mt-36 flex w-full flex-row items-center px-6 sm:px-10 lg:px-20">
       <div className="m-auto flex h-full w-96 flex-col justify-center gap-5 text-start -mx-12 sm:w-full sm:-mx-0">
-        <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9]"
+        <div
+          className="Welcome-box border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9] animate-slide-top"
+          style={{ animationFillMode: "both" }}
         >
           <SparklesIcon className="mr-[10px] h-5 w-5 text-[#b49bff]" />
           <h1 className="Welcome-text text-[13px]">
             Full Stack Developer | Agentic AI Engineer
           </h1>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={slideInFromLeft(0.5)}
-          className="mt-6 flex h-auto w-auto max-w-[700px] flex-col gap-6 text-4xl font-bold text-white sm:text-6xl"
+        <div
+          className="mt-6 flex h-auto w-auto max-w-[700px] flex-col gap-6 text-4xl font-bold text-white sm:text-6xl animate-slide-left"
+          style={{ animationDelay: "0.15s", animationFillMode: "both" }}
         >
           <span>
             Building Voice AI,
@@ -42,20 +30,20 @@ const HeroContent = () => {
             </span>
             & Full Stack SaaS
           </span>
-        </motion.div>
+        </div>
 
-        <motion.p
-          variants={slideInFromLeft(0.5)}
-          className="max-w-[650px] text-lg leading-8 text-gray-400"
+        <p
+          className="max-w-[650px] text-lg leading-8 text-gray-400 animate-slide-left"
+          style={{ animationDelay: "0.3s", animationFillMode: "both" }}
         >
           I&apos;m Rida Naz, a Full Stack Developer and Agentic AI Engineer with
           1.5+ years of experience building production AI systems, Voice AI
           agents, RAG workflows, and scalable web platforms.
-        </motion.p>
+        </p>
 
-        <motion.div
-          variants={slideInFromLeft(1)}
-          className="mt-3 flex flex-wrap gap-3"
+        <div
+          className="mt-3 flex flex-wrap gap-3 animate-slide-left"
+          style={{ animationDelay: "0.45s", animationFillMode: "both" }}
         >
           <Link
             href="/services"
@@ -85,12 +73,12 @@ const HeroContent = () => {
             <RxLinkedinLogo className="h-6 w-6" />
             <span>LinkedIn</span>
           </Link>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div
-        variants={slideInFromRight(0.5)}
-        className="-mr-10 hidden h-full w-full justify-center lg:flex"
+      <div
+        className="-mr-10 hidden h-full w-full justify-center lg:flex animate-slide-right"
+        style={{ animationDelay: "0.3s", animationFillMode: "both" }}
       >
         <Image
           src="/mainIconsdark.svg"
@@ -98,12 +86,13 @@ const HeroContent = () => {
           height={500}
           width={500}
           priority
-          loading="eager"
+          fetchPriority="high"
           style={{ height: "auto", width: "auto" }}
         />
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 
 export default HeroContent;
+
