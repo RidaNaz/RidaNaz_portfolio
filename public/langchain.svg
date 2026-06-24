@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Modern flat style LangChain Parrot -->
+  <circle cx="50" cy="50" r="48" fill="#0C0E23" stroke="#00D2B4" stroke-width="2" />
+  <!-- Beak -->
+  <path d="M52 32 C 52 32, 66 30, 70 38 C 73 43, 67 50, 60 50 Z" fill="#FF8A00" />
+  <!-- Head & Body -->
+  <path d="M38 32 C 38 32, 46 27, 53 32 C 60 37, 62 44, 60 50 C 58 56, 50 60, 45 57 C 40 54, 36 50, 38 32 Z" fill="#00D2B4" />
+  <!-- Feather crest -->
+  <path d="M38 32 C 35 25, 42 20, 45 25" stroke="#00D2B4" stroke-width="3" fill="none" stroke-linecap="round" />
+  <!-- Chest -->
+  <path d="M45 57 C 45 57, 40 62, 38 70 C 36 77, 43 80, 48 80 C 53 80, 60 74, 60 67 C 60 60, 53 60, 45 57 Z" fill="#FFD600" />
+  <!-- Eye -->
+  <circle cx="46" cy="40" r="3.5" fill="#0C0E23" />
+  <circle cx="47" cy="39" r="1" fill="#FFFFFF" />
+  <!-- Wing -->
+  <path d="M48 50 C 52 50, 56 55, 54 62 C 52 69, 44 70, 44 70 Z" fill="#00A389" />
+</svg>

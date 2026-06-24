@@ -22,12 +22,12 @@ LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers
 - Agentic SEO and AI visibility
 
 ## Website Pages
-- About: https://www.ridanaz.com/about
-- Services: https://www.ridanaz.com/services
-- Portfolio: https://www.ridanaz.com/portfolio
-- Skills: https://www.ridanaz.com/skills
-- Resume/CV: https://www.ridanaz.com/resume
-- Contact: https://www.ridanaz.com/contact
+- [About](https://www.ridanaz.com/about)
+- [Services](https://www.ridanaz.com/services)
+- [Portfolio](https://www.ridanaz.com/portfolio)
+- [Skills](https://www.ridanaz.com/skills)
+- [Resume/CV](https://www.ridanaz.com/resume)
+- [Contact](https://www.ridanaz.com/contact)
 
 ## Service Areas
 - Agentic AI systems with LangGraph, OpenAI SDK, MCP, and API tools
@@ -41,6 +41,6 @@ LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers
 - Active in Karachi AI/tech community through GIAIC hackathons
 
 ## Contact
-- Website: https://www.ridanaz.com
-- GitHub: https://github.com/RidaNaz
-- LinkedIn: https://linkedin.com/in/ridanaz67
+- [Website](https://www.ridanaz.com)
+- [GitHub](https://github.com/RidaNaz)
+- [LinkedIn](https://linkedin.com/in/ridanaz67)

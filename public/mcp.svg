@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <circle cx="50" cy="50" r="48" fill="#0C0E23" stroke="#0ea5e9" stroke-width="2" />
+  <!-- Node lines -->
+  <line x1="50" y1="50" x2="26" y2="34" stroke="#475569" stroke-width="3.5" />
+  <line x1="50" y1="50" x2="74" y2="34" stroke="#475569" stroke-width="3.5" />
+  <line x1="50" y1="50" x2="50" y2="76" stroke="#475569" stroke-width="3.5" />
+  <!-- Central Hub (Model) -->
+  <circle cx="50" cy="50" r="14" fill="#0ea5e9" />
+  <circle cx="50" cy="50" r="8" fill="#ffffff" />
+  <!-- Context Node (Pink) -->
+  <circle cx="26" cy="34" r="8.5" fill="#f43f5e" />
+  <!-- Tools Node (Emerald) -->
+  <circle cx="74" cy="34" r="8.5" fill="#10b981" />
+  <!-- Prompt Node (Amber) -->
+  <circle cx="50" cy="76" r="8.5" fill="#f59e0b" />
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <circle cx="50" cy="50" r="48" fill="#0C0E23" stroke="#EC4899" stroke-width="2" />
+  <!-- Define marker for arrow -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 2 L 8 5 L 0 8 z" fill="#EC4899" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 2 L 8 5 L 0 8 z" fill="#3B82F6" />
+    </marker>
+  </defs>
+  <!-- Node A (pink) -->
+  <circle cx="32" cy="42" r="9" fill="#EC4899" />
+  <!-- Node B (blue) -->
+  <circle cx="68" cy="32" r="9" fill="#3B82F6" />
+  <!-- Node C (emerald) -->
+  <circle cx="50" cy="72" r="9" fill="#10B981" />
+  <!-- Connecting Edges -->
+  <path d="M 41 39.5 L 59 34.5" stroke="#E2E8F0" stroke-width="3" fill="none" marker-end="url(#arrow-blue)" />
+  <path d="M 64 41 L 56 63" stroke="#E2E8F0" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <path d="M 44 66 L 36 51" stroke="#E2E8F0" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+</svg>
