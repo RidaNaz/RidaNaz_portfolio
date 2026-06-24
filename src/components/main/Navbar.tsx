@@ -45,6 +45,7 @@ const Navbar = () => {
                 height={34}
                 className="cursor-pointer hover:animate-slowspin"
                 priority
+                fetchPriority="high"
               />
             </span>
             <span className="hidden min-w-0 flex-col leading-tight sm:flex">

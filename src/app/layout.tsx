@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/main/Navbar"
 import Footer from "../components/main/Footer";
 import Script from "next/script";
-import A11yFixer from "@/components/main/A11yFixer";
 import StarsCanvas from "@/components/main/ClientStarsCanvas";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -132,7 +131,32 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} ${cedarville.variable} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
-        <A11yFixer />
+        {/* Inline a11y patcher — runs before any other JS to catch widget buttons */}
+        <Script id="a11y-fixer" strategy="beforeInteractive">{`
+          (function () {
+            function labelButtons(root) {
+              var btns = root.querySelectorAll('button:not([aria-label])');
+              btns.forEach(function (btn) {
+                if (btn.textContent && btn.textContent.trim()) return;
+                var cls = btn.className || '';
+                if (cls.indexOf('text-white/80') !== -1) {
+                  btn.setAttribute('aria-label', 'Close chat widget');
+                } else if (cls.indexOf('bg-gradient-primary') !== -1) {
+                  btn.setAttribute('aria-label', 'Send message');
+                } else if (cls.indexOf('shrink-0') !== -1 || cls.indexOf('p-2') !== -1) {
+                  btn.setAttribute('aria-label', 'Chat action');
+                }
+              });
+              // Scan shadow roots
+              root.querySelectorAll('*').forEach(function (el) {
+                if (el.shadowRoot) labelButtons(el.shadowRoot);
+              });
+            }
+            var obs = new MutationObserver(function () { labelButtons(document); });
+            obs.observe(document.documentElement, { childList: true, subtree: true });
+            labelButtons(document);
+          })();
+        `}</Script>
         <StarsCanvas />
         <Navbar />
         {children}

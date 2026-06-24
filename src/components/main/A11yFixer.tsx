@@ -5,38 +5,51 @@ import { useEffect } from "react";
 export default function A11yFixer() {
   useEffect(() => {
     const fixA11y = () => {
-      // Find all buttons inside a container with class `fixed`
-      const fixedButtons = document.querySelectorAll("div.fixed button");
-      fixedButtons.forEach((btn) => {
-        // If the button lacks an aria-label and has no visible text
-        if (!btn.getAttribute("aria-label") && !btn.textContent?.trim()) {
-          // Identify button type by its classes or layout hierarchy
-          if (
-            btn.classList.contains("text-white/80") ||
-            btn.closest(".flex")?.classList.contains("flex-row")
-          ) {
-            btn.setAttribute("aria-label", "Close Chat Widget");
-          } else if (btn.closest("div.border-t")) {
-            // Is it the send button?
+      const scanRoot = (root: Document | Element | ShadowRoot) => {
+        // Find all buttons in the current root context
+        const buttons = root.querySelectorAll("button");
+        buttons.forEach((btn) => {
+          if (!btn.getAttribute("aria-label") && !btn.textContent?.trim()) {
+            const className = btn.className || "";
+            
             if (
-              btn.classList.contains("bg-gradient-primary") ||
-              btn.classList.contains("bg-purple-600")
+              className.includes("text-white/80") || 
+              btn.closest(".flex")?.classList.contains("flex-row")
+            ) {
+              btn.setAttribute("aria-label", "Close Chat Widget");
+            } else if (
+              className.includes("bg-gradient-primary") || 
+              className.includes("bg-purple-600")
             ) {
               btn.setAttribute("aria-label", "Send message");
+            } else if (
+              className.includes("p-2") || 
+              className.includes("border-gray-200") || 
+              className.includes("shrink-0")
+            ) {
+              btn.setAttribute("aria-label", "Chat action option");
             } else {
-              btn.setAttribute("aria-label", "Chat option");
+              btn.setAttribute("aria-label", "Chat action button");
             }
-          } else {
-            btn.setAttribute("aria-label", "Chat button");
           }
-        }
-      });
+        });
+
+        // Traverse into nested Shadow DOMs
+        const allElements = root.querySelectorAll("*");
+        allElements.forEach((el) => {
+          if (el.shadowRoot) {
+            scanRoot(el.shadowRoot);
+          }
+        });
+      };
+
+      scanRoot(document);
     };
 
-    // Run initially
+    // Run immediately
     fixA11y();
 
-    // Set up MutationObserver to handle dynamically rendered widget elements
+    // Observe changes recursively
     const observer = new MutationObserver((mutations) => {
       fixA11y();
     });
