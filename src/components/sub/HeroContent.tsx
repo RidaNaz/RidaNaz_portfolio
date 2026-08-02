@@ -3,6 +3,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { SiUpwork } from "react-icons/si";
 
 const HeroContent = () => {
   return (
@@ -72,6 +73,15 @@ const HeroContent = () => {
           >
             <RxLinkedinLogo className="h-6 w-6" />
             <span>LinkedIn</span>
+          </Link>
+          <Link
+            href="https://www.upwork.com/freelancers/~0110100ff16de521db"
+            target="_blank"
+            rel="noopener"
+            className="button-primary flex cursor-pointer flex-row justify-center gap-3 rounded-lg px-5 py-3 text-white"
+          >
+            <SiUpwork className="h-6 w-6" />
+            <span>Hire Me on Upwork</span>
           </Link>
         </div>
       </div>

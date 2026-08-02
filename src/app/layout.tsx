@@ -110,6 +110,7 @@ const jsonLd = {
   sameAs: [
     "https://linkedin.com/in/ridanaz67",
     "https://github.com/RidaNaz",
+    "https://www.upwork.com/freelancers/~0110100ff16de521db",
   ],
   alumniOf: {
     "@type": "Organization",
