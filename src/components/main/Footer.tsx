@@ -5,6 +5,7 @@ import {
     RxInstagramLogo,
     RxLinkedinLogo,
 } from "react-icons/rx";
+import { SiUpwork } from "react-icons/si";
 
 import { FaYoutube, FaFacebook } from "react-icons/fa";
 import Link from "next/link";
@@ -55,6 +56,12 @@ const Footer = () => {
                             <p className="flex flex-row items-center my-[15px] cursor-pointer">
                                 <FaFacebook />
                                 <span className="text-[15px] ml-[6px]">Facebook</span>
+                            </p>
+                        </Link>
+                        <Link href="https://www.upwork.com/freelancers/~0110100ff16de521db" target="_blank" rel="noopener">
+                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                                <SiUpwork />
+                                <span className="text-[15px] ml-[6px]">Hire Me on Upwork</span>
                             </p>
                         </Link>
                     </div>

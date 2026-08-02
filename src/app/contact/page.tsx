@@ -49,7 +49,7 @@ export default function ContactPage() {
 
         <div className="mt-14 rounded-lg border border-white/10 bg-white/[0.04] p-8">
           <h2 className="text-2xl font-bold">Best starting points</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
             <Link
               href={profileLinks.linkedin}
               target="_blank"
@@ -68,6 +68,17 @@ export default function ContactPage() {
               <span className="font-semibold">GitHub</span>
               <p className="mt-2 text-gray-300">
                 Best for reviewing repositories, projects, and engineering work.
+              </p>
+            </Link>
+            <Link
+              href={profileLinks.upwork}
+              target="_blank"
+              rel="noopener"
+              className="rounded-lg border border-white/10 p-5 transition hover:border-green-300/50"
+            >
+              <span className="font-semibold">Upwork</span>
+              <p className="mt-2 text-gray-300">
+                Best for hiring me on a freelance contract with verified reviews.
               </p>
             </Link>
           </div>

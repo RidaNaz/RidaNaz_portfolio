@@ -2,6 +2,7 @@ export const profileLinks = {
   email: "mailto:rnaz3414@gmail.com",
   github: "https://github.com/RidaNaz",
   linkedin: "https://www.linkedin.com/in/ridanaz67/",
+  upwork: "https://www.upwork.com/freelancers/~0110100ff16de521db",
   youtube: "https://www.youtube.com/@RidaNaz67",
   resume: "/RidaNaz_Resume.pdf",
   cv: "/RidaNaz_CV.pdf",
@@ -229,6 +230,13 @@ export const contactOptions = [
       "For recruiters and technical collaborators who want to inspect projects, repositories, and implementation style.",
     action: "View GitHub",
     href: profileLinks.github,
+  },
+  {
+    title: "Hire Me for Freelance Work",
+    description:
+      "For clients who want to hire an Agentic AI Engineer or Full Stack Developer on Upwork for a fixed-price or hourly contract.",
+    action: "View Upwork Profile",
+    href: profileLinks.upwork,
   },
   {
     title: "Discuss a Collaboration",

@@ -155,6 +155,13 @@ export const Socials = [
     width: 23,
     height: 23,
     link: "https://www.instagram.com/rida_naz67/"
+  },
+  {
+    name: "Upwork",
+    src: "/upwork.svg",
+    width: 27,
+    height: 27,
+    link: "https://www.upwork.com/freelancers/~0110100ff16de521db"
   }
 ];
 
