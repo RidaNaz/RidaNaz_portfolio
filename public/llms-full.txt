@@ -1,27 +1,68 @@
-# Rida Naz - Full Profile
+﻿# Rida Naz - Full Profile
 
-Rida Naz is a Full Stack Developer and Agentic AI Engineer with 1.5+ years 
-of experience building production AI systems based in Karachi, Pakistan.
+Rida Naz is a Full Stack Developer and Agentic AI Engineer based in Karachi, Pakistan. She builds production AI systems, voice agents, agentic workflows, RAG knowledge systems, and full stack SaaS platforms for founders, startups, AI teams, and technical clients.
+
+## Positioning
+Rida builds AI systems that automate real business operations. Her work focuses on practical production use cases where AI needs to reason, retrieve context, call tools, speak with users, update systems, and support real workflows.
 
 ## Current Role
-Founding team member and Lead Engineer at TalkifAI — an early-stage AI voice 
-agent platform built from scratch. Responsible for core infrastructure including 
-BYOC telephony (Twilio, Telnyx, SIP), LiveKit voice pipeline, multi-tenant 
-architecture, and deployment on Google Cloud.
+Rida is a founding team member and Lead Engineer at TalkifAI, an early-stage AI voice agent platform. Her responsibilities include voice infrastructure, backend architecture, platform workflows, and production deployment foundations.
+
+At TalkifAI, she has worked on LiveKit voice pipelines, SIP/WebRTC infrastructure, BYOC telephony with Twilio and Telnyx, RAG knowledge bases, batch calling, multi-tenant platform architecture, and Google Cloud deployment.
 
 ## Technical Stack
-Next.js, FastAPI, PostgreSQL, Docker, Google Cloud, LiveKit, SIP/WebRTC,
-LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers
+Next.js, React, TypeScript, Tailwind CSS, FastAPI, Python, PostgreSQL, Docker, Google Cloud, LiveKit, SIP/WebRTC, Twilio, Telnyx, LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers, RAG pipelines, REST APIs, webhooks, and cloud deployment workflows.
 
 ## Specializations
-- Voice AI agents and real-time communication
+- Voice AI agents and realtime communication systems
 - Agentic workflows and multi-agent systems
-- Full stack SaaS platforms
-- MCP server integration
-- RAG knowledge systems
-- Agentic SEO and AI visibility
+- Tool-using AI agents with APIs and MCP servers
+- RAG knowledge systems and domain assistants
+- Full stack SaaS products and dashboards
+- Backend architecture for AI products
+- AI automation integrations
+- Agentic SEO and AI-readable portfolio architecture
+
+## Services
+### Voice AI Agent Build
+For support, sales, booking, phone-based workflows, and conversational business operations. Deliverables may include LiveKit/SIP voice pipelines, telephony integration, agent flow design, backend APIs, and deployment support.
+
+### Agentic Workflow Automation
+For teams replacing repetitive internal work with AI agents that can plan, call tools, update systems, and keep humans in the loop. Common tools include LangGraph, OpenAI Agents SDK, MCP, APIs, and workflow logging.
+
+### RAG Knowledge Assistant
+For products or teams with business knowledge stored in documents, policies, product data, or support content. Work may include ingestion pipelines, retrieval strategy, context engineering, and assistant UX.
+
+### Full Stack AI SaaS MVP
+For founders and startups that need a usable AI product interface, backend, database, auth, and deployment path. Common stack includes Next.js, TypeScript, FastAPI, PostgreSQL, Docker, and cloud services.
+
+### AI Integration Layer
+For businesses that need AI connected to CRMs, databases, APIs, webhooks, dashboards, and internal tools.
+
+### Agentic SEO and AI Visibility
+For portfolios and technical brands that need search engine visibility and AI-agent readability through metadata, schema, llms.txt, sitemap structure, and crawlable content.
+
+## Featured Projects
+### TalkifAI
+AI voice agent platform for creating, deploying, and scaling voice agents. Rida is a founding team member and Lead Engineer. Her work includes LiveKit and SIP infrastructure, BYOC telephony, backend platform systems, RAG knowledge-base workflows, batch calling, and deployment foundations.
+
+### Personal AI Employee
+Autonomous digital worker concept using Claude Code, MCP, Azure, and full stack orchestration to monitor channels and execute actions across connected tools.
+
+### TalkifAI Customer Success FTE
+Production-grade AI support agent concept with a multi-step agentic pipeline and event-driven architecture for async multi-channel message streaming.
+
+### Agentic Todo with MCP
+Full stack task management app using natural language AI interactions and MCP tools. Built with FastAPI, SQLModel, Neon PostgreSQL, and a stateless AI chat interface.
+
+### AI Native Book
+Technical textbook on Physical AI and humanoid robotics with an integrated RAG chatbot for querying book content.
+
+### JungleMug
+Amazon listing automation platform with AI content generation, mockup automation, and Amazon SP-API integration.
 
 ## Website Pages
+- [Home](https://www.ridanaz.com)
 - [About](https://www.ridanaz.com/about)
 - [Services](https://www.ridanaz.com/services)
 - [Portfolio](https://www.ridanaz.com/portfolio)
@@ -29,16 +70,9 @@ LangChain, LangGraph, OpenAI Agents SDK, Claude Code, MCP servers
 - [Resume/CV](https://www.ridanaz.com/resume)
 - [Contact](https://www.ridanaz.com/contact)
 
-## Service Areas
-- Agentic AI systems with LangGraph, OpenAI SDK, MCP, and API tools
-- Voice AI agents with LiveKit, SIP, WebRTC, Twilio, and Telnyx
-- Full stack SaaS applications with Next.js, TypeScript, FastAPI, and PostgreSQL
-- Retrieval Augmented Generation and knowledge base systems
-- Technical SEO, structured metadata, llms.txt, and AI-readable portfolio architecture
-
-## Education & Community
-- Pursuing Certified Agentic AI Engineer — PIAIC/GIAIC
-- Active in Karachi AI/tech community through GIAIC hackathons
+## Education and Community
+- Pursuing Certified Agentic AI Engineer through PIAIC/GIAIC
+- Active in Karachi AI and technology community through GIAIC and hackathon work
 
 ## Contact
 - [Website](https://www.ridanaz.com)

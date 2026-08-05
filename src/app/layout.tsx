@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter, Cedarville_Cursive } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/main/Navbar"
+import Navbar from "@/components/main/Navbar";
 import Footer from "../components/main/Footer";
 import Script from "next/script";
 import StarsCanvas from "@/components/main/ClientStarsCanvas";
@@ -14,16 +14,18 @@ const cedarville = Cedarville_Cursive({
 });
 
 export const metadata: Metadata = {
-  title: "Rida Naz | FullStack Developer & Agentic AI Engineer",
+  title: "Rida Naz | Agentic AI Engineer & Full Stack Product Builder",
   description:
-    "Rida Naz is a Full Stack Developer and Agentic AI Engineer based in Karachi, Pakistan. Specialized in Voice AI agents, Agentic workflows, Next.js, and scalable SaaS platforms.",
+    "Rida Naz builds production AI systems, voice AI agents, agentic workflows, RAG knowledge systems, and full stack SaaS platforms for founders and technical teams.",
   keywords: [
     "Rida Naz",
-    "Full Stack Developer Karachi",
     "Agentic AI Engineer",
-    "Voice AI Agent",
+    "Voice AI Agent Developer",
+    "Full Stack Developer Karachi",
     "Next.js Developer Pakistan",
     "LiveKit developer",
+    "LangGraph developer",
+    "FastAPI Developer",
     "AI Engineer Pakistan",
   ],
   icons: {
@@ -50,9 +52,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rida Naz | FullStack Developer & Agentic AI Engineer",
+    title: "Rida Naz | Agentic AI Engineer & Full Stack Product Builder",
     description:
-      "Specialized in Voice AI, Agentic Workflows, and Scalable FullStack Applications.",
+      "Production AI systems, voice agents, agentic workflows, RAG, integrations, and full stack SaaS platforms.",
     url: "https://www.ridanaz.com",
     siteName: "Rida Naz",
     type: "website",
@@ -61,61 +63,85 @@ export const metadata: Metadata = {
         url: "https://www.ridanaz.com/og",
         width: 1200,
         height: 630,
-        alt: "Rida Naz - FullStack Developer & Agentic AI Engineer",
+        alt: "Rida Naz - Agentic AI Engineer and Full Stack Product Builder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rida Naz | FullStack Developer & Agentic AI Engineer",
+    title: "Rida Naz | Agentic AI Engineer & Full Stack Product Builder",
     description:
-      "Specialized in Voice AI, Agentic Workflows, and Scalable FullStack Applications.",
+      "Production AI systems, voice agents, agentic workflows, RAG, integrations, and full stack SaaS platforms.",
     images: ["https://www.ridanaz.com/og"],
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Rida Naz",
-  url: "https://www.ridanaz.com",
-  jobTitle: "Full Stack Developer & Agentic AI Engineer",
-  description:
-    "Full Stack Developer and Agentic AI Engineer specializing in Voice AI agents, Agentic workflows, and scalable SaaS platforms.",
-  knowsAbout: [
-    "Voice AI",
-    "Agentic Workflows",
-    "Next.js",
-    "FastAPI",
-    "LiveKit",
-    "LangGraph",
-    "MCP Servers",
-    "Multi-agent Systems",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.ridanaz.com/#person",
+      name: "Rida Naz",
+      url: "https://www.ridanaz.com",
+      jobTitle: "Agentic AI Engineer and Full Stack Product Builder",
+      description:
+        "Full Stack Developer and Agentic AI Engineer specializing in Voice AI agents, agentic workflows, RAG systems, and full stack SaaS platforms.",
+      knowsAbout: [
+        "Voice AI",
+        "Agentic Workflows",
+        "Next.js",
+        "FastAPI",
+        "LiveKit",
+        "LangGraph",
+        "MCP Servers",
+        "RAG Systems",
+        "Multi-agent Systems",
+      ],
+      worksFor: {
+        "@type": "Organization",
+        name: "TalkifAI",
+        url: "https://talkifai.dev",
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Karachi",
+        addressCountry: "PK",
+      },
+      sameAs: [
+        "https://linkedin.com/in/ridanaz67",
+        "https://github.com/RidaNaz",
+        "https://www.upwork.com/freelancers/~0110100ff16de521db",
+      ],
+      alumniOf: {
+        "@type": "Organization",
+        name: "PIAIC/GIAIC",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ridanaz.com/#website",
+      name: "Rida Naz Portfolio",
+      url: "https://www.ridanaz.com",
+      publisher: { "@id": "https://www.ridanaz.com/#person" },
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.ridanaz.com/#services",
+      name: "Rida Naz AI Engineering Services",
+      url: "https://www.ridanaz.com/services",
+      areaServed: "Worldwide",
+      provider: { "@id": "https://www.ridanaz.com/#person" },
+      serviceType: [
+        "Voice AI agent development",
+        "Agentic workflow automation",
+        "RAG knowledge systems",
+        "Full stack AI SaaS development",
+        "AI integration engineering",
+        "Agentic SEO and AI visibility",
+      ],
+    },
   ],
-  worksFor: {
-    "@type": "Organization",
-    name: "TalkifAI",
-    url: "https://talkifai.dev",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Rida Naz",
-    url: "https://www.ridanaz.com",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Karachi",
-    addressCountry: "PK",
-  },
-  sameAs: [
-    "https://linkedin.com/in/ridanaz67",
-    "https://github.com/RidaNaz",
-    "https://www.upwork.com/freelancers/~0110100ff16de521db",
-  ],
-  alumniOf: {
-    "@type": "Organization",
-    name: "PIAIC/GIAIC",
-  },
 };
 
 export default function RootLayout({
@@ -132,7 +158,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} ${cedarville.variable} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
-        {/* Inline a11y patcher — runs before any other JS to catch widget buttons */}
+        {/* Inline a11y patcher runs before other JS to catch widget buttons. */}
         <Script id="a11y-fixer" strategy="beforeInteractive">{`
           (function () {
             function labelButtons(root) {
@@ -148,7 +174,6 @@ export default function RootLayout({
                   btn.setAttribute('aria-label', 'Chat action');
                 }
               });
-              // Scan shadow roots
               root.querySelectorAll('*').forEach(function (el) {
                 if (el.shadowRoot) labelButtons(el.shadowRoot);
               });

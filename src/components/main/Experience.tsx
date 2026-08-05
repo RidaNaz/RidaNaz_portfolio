@@ -1,45 +1,72 @@
-"use client";
-
-import React from "react";
+﻿import React from "react";
 import { WorkExperience } from "@/constants";
-import { Button } from "@/ui/MovingBorders";
-import Image from "next/image";
+
+const experienceProof = WorkExperience.map((item) => {
+  if (item.company === "TalkifAI") {
+    return {
+      ...item,
+      proof: [
+        "Built core voice-agent platform infrastructure across LiveKit, SIP, and Google Cloud.",
+        "Owned BYOC telephony layers, batch calling, and RAG knowledge-base indexing workflows.",
+        "Worked across product, architecture, and implementation as a founding team member.",
+      ],
+    };
+  }
+
+  return {
+    ...item,
+    proof: [
+      "Built ecommerce automation workflows around AI content generation and listing operations.",
+      "Integrated Amazon SP-API and automated mockup processes for product publishing.",
+      "Delivered full stack product features across frontend, backend, and operational workflows.",
+    ],
+  };
+});
 
 const Experience = () => {
   return (
-    <div id="experience" className="py-20 w-full">
-      <h1 className="text-center font-bold text-white text-[40px] mb-[15px]">
-        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600">Work Experience</span>
-      </h1>
+    <section id="experience" className="w-full px-6 py-24 text-white">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">
+              Experience
+            </p>
+            <h2 className="text-[34px] font-bold leading-tight sm:text-[46px]">
+              Technical ownership across AI products and full stack systems.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-gray-300">
+              My work sits close to the product: building the infrastructure,
+              workflows, interfaces, and integrations that make AI useful in
+              operational environments.
+            </p>
+          </div>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 px-10">
-        {WorkExperience.map((card) => (
-          <Button
-            key={card.id}
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-          >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
-                </h1>
-                <p className="text-start text-purple-200 font-semibold mt-1">
-                  {card.company} | {card.duration}
+          <div className="space-y-5">
+            {experienceProof.map((item) => (
+              <article
+                key={item.id}
+                className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6"
+              >
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-200">
+                  {item.duration}
                 </p>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
-                </p>
-              </div>
-            </div>
-          </Button>
-        ))}
+                <h3 className="mt-3 text-2xl font-bold">{item.title}</h3>
+                <p className="mt-1 font-semibold text-pink-200">{item.company}</p>
+                <p className="mt-4 leading-7 text-gray-300">{item.desc}</p>
+                <ul className="mt-5 grid gap-3 text-sm leading-6 text-gray-300 md:grid-cols-3">
+                  {item.proof.map((proof) => (
+                    <li key={proof} className="rounded-lg border border-white/10 bg-white/[0.04] p-4">
+                      {proof}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from "react";
 import { CertificateCards } from "@/constants";
 import CertificateCard from "../sub/CertificateCard";
@@ -6,27 +6,30 @@ import { motion } from "framer-motion";
 
 const Certificates = () => {
   return (
-    <div id="certificates" className="relative w-full py-20 px-6 overflow-hidden">
-      {/* Background Decorative Element */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[120px] -z-10" />
-      
-      <h1 className="text-center font-bold text-white text-[40px] mb-20 leading-tight">
-        Here&rsquo;s my{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-          CERTIFICATES
-        </span>
-      </h1>
+    <section id="certificates" className="relative w-full overflow-hidden px-6 py-20 text-white">
+      <div className="mx-auto max-w-7xl">
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">
+            Credentials
+          </p>
+          <h2 className="text-[34px] font-bold leading-tight sm:text-[46px]">
+            Formal learning that supports practical AI product work.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-gray-300">
+            Certifications are supporting proof. The stronger signal is how the
+            concepts show up in shipped agents, voice infrastructure, RAG
+            systems, and full stack products.
+          </p>
+        </div>
 
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           {CertificateCards.map((card, index) => (
             <motion.div
               key={card.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.45, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] max-w-[400px]"
             >
               <CertificateCard
                 src={card.thumbnail}
@@ -38,7 +41,7 @@ const Certificates = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

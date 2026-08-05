@@ -1,91 +1,101 @@
-"use client";
+﻿import Link from "next/link";
 
-import React from 'react'
-import ServicesCard from '../sub/ServiceCard'
-import { motion } from 'framer-motion'
-
-const services_data = [
-    {
-        num: "01",
-        title: "Agentic AI Solutions",
-        description: "Building production-grade autonomous agents and multi-agent systems using LangChain, LangGraph, and OpenAI SDK."
-    },
-    {
-        num: "02",
-        title: "AI Voice Agents",
-        description: "Developing low-latency voice AI systems with LiveKit, SIP, and custom STT/TTS pipelines for enterprise scaling."
-    },
-    {
-        num: "03",
-        title: "FullStack Development",
-        description: "Architecting modern web applications with Next.js, TypeScript, and high-performance backend systems."
-    },
-    {
-        num: "04",
-        title: "RAG & Knowledge Bases",
-        description: "Implementing advanced Retrieval Augmented Generation (RAG) using vector and graph databases for intelligent context."
-    },
-    {
-        num: "05",
-        title: "API & MCP Integration",
-        description: "Connecting AI systems to real-world actions via REST APIs and Model Context Protocol (MCP) servers."
-    },
-    {
-        num: "06",
-        title: "Scalable AI Infrastructure",
-        description: "Deploying AI workflows using Docker, Kubernetes, and Cloud platforms for high availability and performance."
-    }
-]
+const serviceOffers = [
+  {
+    title: "Voice AI Agent Build",
+    bestFor: "Support, sales, booking, and phone-based workflows",
+    deliverables: ["LiveKit/SIP voice pipeline", "Telephony integration", "Agent flow and backend APIs"],
+    outcome: "A voice experience that can talk to users, access business context, and route work reliably.",
+  },
+  {
+    title: "Agentic Workflow Automation",
+    bestFor: "Teams replacing repetitive internal work with tool-using agents",
+    deliverables: ["LangGraph/OpenAI workflow", "MCP or API tools", "Human checkpoints and logs"],
+    outcome: "An AI workflow that plans, calls tools, updates systems, and stays understandable to operators.",
+  },
+  {
+    title: "RAG Knowledge Assistant",
+    bestFor: "Products and teams with documents, policies, product data, or support knowledge",
+    deliverables: ["Ingestion pipeline", "Retrieval strategy", "Chat or workflow interface"],
+    outcome: "AI answers grounded in trusted data instead of generic model memory.",
+  },
+  {
+    title: "Full Stack AI SaaS MVP",
+    bestFor: "Founders who need a product interface and backend around an AI workflow",
+    deliverables: ["Next.js interface", "FastAPI backend", "Database, auth, deployment path"],
+    outcome: "A usable product foundation that can be tested with customers and extended over time.",
+  },
+  {
+    title: "AI Integration Layer",
+    bestFor: "Businesses connecting AI to CRMs, databases, dashboards, and third-party tools",
+    deliverables: ["API/webhook integration", "Background jobs", "Data and action workflow"],
+    outcome: "AI that can operate inside existing systems instead of sitting in a separate chat window.",
+  },
+  {
+    title: "Agentic SEO and AI Visibility",
+    bestFor: "Technical brands and portfolios that need search and AI-agent readability",
+    deliverables: ["Metadata and schema", "llms.txt strategy", "Crawlable content architecture"],
+    outcome: "A clearer entity footprint for search engines, AI summarizers, and high-intent visitors.",
+  },
+];
 
 const Services = () => {
-    return (
-        <section id="services" className="relative py-32 px-6 overflow-hidden">
-            {/* Background Decorative Element */}
-            <div className="absolute top-1/2 right-0 w-[600px] h-[600px] bg-purple-900/10 rounded-full blur-[150px] -z-10 translate-x-1/2" />
-            
-            <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-24">
-                    <motion.h1 
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
-                        className="text-[40px] md:text-[50px] font-bold text-white mb-6"
-                    >
-                        My Special <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Services</span> For You
-                    </motion.h1>
-                    <motion.p 
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                        viewport={{ once: true }}
-                        className="text-gray-400 text-lg max-w-2xl mx-auto"
-                    >
-                        I deliver high-performance AI solutions and scalable fullstack applications tailored for the next generation of digital innovation.
-                    </motion.p>
-                </div>
+  return (
+    <section id="services" className="relative overflow-hidden px-6 py-24 text-white">
+      <div className="mx-auto max-w-7xl">
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
+            Services
+          </p>
+          <h2 className="text-[34px] font-bold leading-tight sm:text-[46px]">
+            Focused AI engineering offers for teams that need production outcomes.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-gray-300">
+            I work best where AI meets real operations: workflows, voice, tools,
+            knowledge, product interfaces, APIs, and deployment.
+          </p>
+        </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {services_data.map((service, index) => (
-                        <motion.div
-                            key={service.num}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className="h-full"
-                        >
-                            <ServicesCard 
-                                title={service.title} 
-                                num={service.num} 
-                                description={service.description} 
-                            />
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    )
-}
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {serviceOffers.map((service) => (
+            <article
+              key={service.title}
+              className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6 transition hover:-translate-y-1 hover:border-cyan-300/50"
+            >
+              <h3 className="text-2xl font-bold text-white">{service.title}</h3>
+              <p className="mt-4 text-sm font-semibold uppercase tracking-[0.14em] text-cyan-200">
+                Best for
+              </p>
+              <p className="mt-2 leading-7 text-gray-300">{service.bestFor}</p>
+              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-pink-200">
+                Deliverables
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-6 text-gray-300">
+                {service.deliverables.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan-300" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 rounded-lg border border-white/10 bg-white/[0.04] p-4 text-sm leading-6 text-gray-200">
+                {service.outcome}
+              </p>
+            </article>
+          ))}
+        </div>
 
-export default Services
+        <div className="mt-10 flex justify-center">
+          <Link
+            href="/services"
+            className="rounded-lg border border-cyan-300/40 bg-cyan-300/10 px-5 py-3 font-semibold text-cyan-100 transition hover:bg-cyan-300/20"
+          >
+            See Detailed Services
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;

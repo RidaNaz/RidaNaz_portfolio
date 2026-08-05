@@ -1,97 +1,124 @@
-import React from "react";
-import {
-    RxDiscordLogo,
-    RxGithubLogo,
-    RxInstagramLogo,
-    RxLinkedinLogo,
-} from "react-icons/rx";
-import { SiUpwork } from "react-icons/si";
+﻿import Link from "next/link";
+import { profileLinks } from "@/constants/profile-pages";
 
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import Link from "next/link";
+const siteLinks = [
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Skills", href: "/skills" },
+  { label: "Resume", href: "/resume" },
+  { label: "Contact", href: "/contact" },
+];
+
+const serviceLinks = [
+  "Voice AI agents",
+  "Agentic workflows",
+  "RAG knowledge systems",
+  "Full stack AI SaaS",
+  "AI integrations",
+  "Agentic SEO",
+];
+
+const socialLinks = [
+  { label: "LinkedIn", href: profileLinks.linkedin },
+  { label: "GitHub", href: profileLinks.github },
+  { label: "Upwork", href: profileLinks.upwork },
+  { label: "YouTube", href: profileLinks.youtube },
+];
 
 const Footer = () => {
-    return (
-        <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] py-16">
-            <div className="py-8 w-full flex flex-col items-center justify-center m-auto">
-                <div className="w-full h-full flex flex-row gap-6 items-center justify-around flex-wrap">
-
-
-                    <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                        <div className="font-bold text-[18px] mb-4">Community</div>
-
-                        <Link href="https://www.youtube.com/@RidaNaz67">
-                        <div className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <FaYoutube />
-                            <p className="text-[15px] ml-[6px]">Youtube</p>
-                        </div>
-                        </Link>
-                        <Link href="https://github.com/RidaNaz" target="_blank">
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <RxGithubLogo />
-                            <span className="text-[15px] ml-[6px]">Github</span>
-                        </p>
-                        </Link>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <RxDiscordLogo />
-                            <span className="text-[15px] ml-[6px]">Discord</span>
-                        </p>
-                    </div>
-                    <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                        <div className="font-bold text-[18px] mb-4">Social Media</div>
-
-                        <Link href="https://www.linkedin.com/in/ridanaz67/" target="_blank">
-                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                                <RxLinkedinLogo />
-                                <span className="text-[15px] ml-[6px]">Linkedin</span>
-                            </p>
-                        </Link>
-                        <Link href="https://www.instagram.com/rida_naz67/">
-                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                                <RxInstagramLogo />
-                                <span className="text-[15px] ml-[6px]">Instagram</span>
-                            </p>
-                        </Link>
-                        <Link href="https://www.facebook.com/profile.php?id=100082363551016">
-                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                                <FaFacebook />
-                                <span className="text-[15px] ml-[6px]">Facebook</span>
-                            </p>
-                        </Link>
-                        <Link href="https://www.upwork.com/freelancers/~0110100ff16de521db" target="_blank" rel="noopener">
-                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                                <SiUpwork />
-                                <span className="text-[15px] ml-[6px]">Hire Me on Upwork</span>
-                            </p>
-                        </Link>
-                    </div>
-                    <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                        <div className="font-bold text-[18px] mb-4">About</div>
-                        <Link href="/about" className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <span className="text-[15px] ml-[6px]">About Rida</span>
-                        </Link>
-                        <Link href="/services" className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <span className="text-[15px] ml-[6px]">Services</span>
-                        </Link>
-                        <Link href="/resume" className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <span className="text-[15px] ml-[6px]">Resume / CV</span>
-                        </Link>
-                        <Link href="/contact" className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <span className="text-[15px] ml-[6px]">Work With Me</span>
-                        </Link>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-
-                            <span className="text-[15px] ml-[6px]">rnaz3414@gmail.com</span>
-                        </p>
-                    </div>
-                </div>
-                <br />
-                <div className="mb-[10px] text-[15px] text-center mt-12">
-                    &copy; Rida Naz | Agentic AI Engineer 2026. All rights reserved
-                </div>
-            </div>
+  return (
+    <footer className="w-full border-t border-white/10 bg-[#030014] px-6 py-14 text-gray-300">
+      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr]">
+        <div>
+          <Link href="/" className="text-2xl font-bold text-white">
+            Rida Naz
+          </Link>
+          <p className="mt-4 max-w-md leading-7">
+            Agentic AI Engineer and Full Stack Product Builder creating voice
+            agents, AI workflows, RAG systems, integrations, and SaaS platforms
+            for real business operations.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/contact"
+              className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-[#030014] transition hover:bg-cyan-100"
+            >
+              Work With Me
+            </Link>
+            <Link
+              href={profileLinks.upwork}
+              target="_blank"
+              rel="noopener"
+              className="rounded-lg border border-emerald-300/40 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-300/20"
+            >
+              Hire on Upwork
+            </Link>
+          </div>
         </div>
-    )
-}
 
-export default Footer
+        <nav aria-label="Footer site navigation">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
+            Site
+          </h2>
+          <ul className="mt-5 space-y-3">
+            {siteLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="transition hover:text-white">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-pink-200">
+            Services
+          </h2>
+          <ul className="mt-5 space-y-3">
+            {serviceLinks.map((service) => (
+              <li key={service}>
+                <Link href="/services" className="transition hover:text-white">
+                  {service}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">
+            Contact
+          </h2>
+          <ul className="mt-5 space-y-3">
+            {socialLinks.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener"
+                  className="transition hover:text-white"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href={profileLinks.email} className="transition hover:text-white">
+                rnaz3414@gmail.com
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-sm text-gray-400 md:flex-row md:items-center md:justify-between">
+        <p>© Rida Naz 2026. All rights reserved.</p>
+        <p>Karachi, Pakistan · Available for AI product and SaaS collaborations.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
