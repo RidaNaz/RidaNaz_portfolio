@@ -67,16 +67,16 @@ export default function AboutPage() {
               infrastructure, telephony workflows, knowledge systems, and deployment.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/portfolio" className="rounded-lg bg-white px-5 py-3 font-semibold text-[#030014] transition hover:bg-emerald-100">
+              <Link href="/portfolio" className="rounded-lg bg-white px-5 py-3 font-semibold text-surface transition hover:bg-accent-soft/20">
                 View Case Studies
               </Link>
-              <Link href="/contact" className="rounded-lg border border-emerald-300/40 bg-emerald-300/10 px-5 py-3 font-semibold text-emerald-100 transition hover:bg-emerald-300/20">
+              <Link href="/contact" className="rounded-lg border border-accent/40 bg-accent/10 px-5 py-3 font-semibold text-accent transition hover:bg-accent/20">
                 Work With Me
               </Link>
             </div>
           </div>
 
-          <aside className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6">
+          <aside className="rounded-lg border border-white/10 bg-surface-soft/70 p-6">
             <h2 className="text-2xl font-bold">Profile Snapshot</h2>
             <ul className="mt-6 space-y-4 text-gray-300">
               {resumeHighlights.map((highlight) => (
@@ -107,7 +107,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 space-y-5">
             {timeline.map((item) => (
-              <article key={`${item.role}-${item.company}`} className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6">
+              <article key={`${item.role}-${item.company}`} className="rounded-lg border border-white/10 bg-surface-soft/70 p-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">{item.period}</p>
                 <h3 className="mt-3 text-2xl font-bold">{item.role}</h3>
                 <p className="mt-1 font-semibold text-white/80">{item.company}</p>

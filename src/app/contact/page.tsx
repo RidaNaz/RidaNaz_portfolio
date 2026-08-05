@@ -32,14 +32,14 @@ export default function ContactPage() {
           {contactOptions.map((option) => (
             <article
               key={option.title}
-              className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6 backdrop-blur-xl"
+              className="rounded-lg border border-white/10 bg-surface-soft/70 p-6 backdrop-blur-xl"
             >
               <h2 className="text-2xl font-bold">{option.title}</h2>
-              <p className="mt-4 leading-7 text-gray-300">{option.description}</p>
+              <p className="mt-4 leading-7 text-text-muted">{option.description}</p>
               <Link
                 href={option.href}
                 target={option.href.startsWith("http") ? "_blank" : undefined}
-                className="mt-6 inline-flex rounded-lg border border-cyan-300/40 bg-cyan-300/10 px-4 py-3 font-semibold text-cyan-100 transition hover:bg-cyan-300/20"
+                className="mt-6 inline-flex rounded-lg border border-accent/40 bg-accent/10 px-4 py-3 font-semibold text-accent transition hover:bg-accent/20"
               >
                 {option.action}
               </Link>
@@ -47,7 +47,7 @@ export default function ContactPage() {
           ))}
         </div>
 
-        <div className="mt-14 rounded-lg border border-white/10 bg-white/[0.04] p-8">
+        <div className="mt-14 rounded-lg border border-white/10 bg-surface-panel/40 p-8">
           <h2 className="text-2xl font-bold">Best starting points</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <Link

@@ -14,9 +14,9 @@ const CertificateCard = ({ src, title, description, badge }: Props) => {
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      className="relative group overflow-hidden rounded-2xl border border-white/10 bg-[#0c0e23] transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+      className="relative group overflow-hidden rounded-2xl border border-white/10 bg-surface-soft transition-all duration-300 hover:border-accent-alt/50 hover:shadow-[0_0_30px_rgba(183,160,255,0.15)]"
     >
-      <div className="relative h-64 w-full bg-[#13162D] overflow-hidden flex items-center justify-center p-4">
+      <div className="relative h-64 w-full bg-surface-panel overflow-hidden flex items-center justify-center p-4">
         <Image
           src={src}
           alt={title}

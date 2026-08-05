@@ -2,42 +2,70 @@
 
 const trustSignals = [
   { label: "Current role", value: "Lead Engineer at TalkifAI" },
-  { label: "Core focus", value: "Voice AI, agents, RAG, SaaS" },
-  { label: "Systems", value: "LiveKit, SIP, FastAPI, Next.js" },
+  { label: "Specialty", value: "Voice AI, agentic workflows, RAG" },
+  { label: "Platform experience", value: "LiveKit, SIP, FastAPI, Next.js" },
   { label: "Best fit", value: "Founders, startups, AI teams" },
 ];
 
 const problems = [
-  "Manual workflows that slow down support, sales, and internal operations.",
-  "AI prototypes that need production architecture, tools, memory, and deployment.",
-  "Knowledge scattered across documents, apps, APIs, and business systems.",
-  "Voice or chat experiences that must feel reliable, fast, and useful in real conversations.",
+  {
+    title: "Support and operations overload",
+    description:
+      "Manual conversations, fractured tools, and repeated handoffs slow teams and reduce response quality.",
+  },
+  {
+    title: "AI prototypes that never scale",
+    description:
+      "Without production architecture, workflows, and observability, promising AI proofs stall before launch.",
+  },
+  {
+    title: "Knowledge scattered across systems",
+    description:
+      "Documents, tickets, and product data need to be connected into a trusted retrieval and answer pipeline.",
+  },
+  {
+    title: "Voice or chat experiences that feel brittle",
+    description:
+      "Real conversations require stable audio, routing, state, and handoff logic, not just model responses.",
+  },
 ];
 
 const buildAreas = [
   {
     title: "Voice AI Agents",
-    problem: "Teams need AI that can speak with users, route calls, and handle real conversations.",
-    solution: "I build low-latency voice systems with LiveKit, SIP/WebRTC, STT/TTS, Twilio, Telnyx, and backend orchestration.",
-    impact: "Useful for support, booking, sales qualification, and internal voice workflows.",
+    problem:
+      "Teams need AI that can speak with users, route calls, and handle real conversations.",
+    solution:
+      "I build low-latency voice systems with LiveKit, SIP/WebRTC, STT/TTS, Twilio, Telnyx, and backend orchestration.",
+    impact:
+      "Useful for support, booking, sales qualification, and internal voice workflows.",
   },
   {
     title: "Agentic Workflows",
-    problem: "Businesses want AI that can take action, not just answer questions.",
-    solution: "I design tool-using agents with LangGraph, OpenAI SDK, MCP, APIs, checkpoints, and structured workflows.",
-    impact: "Useful for automation, operations, customer success, and multi-step business processes.",
+    problem:
+      "Businesses want AI that can take action, not just answer questions.",
+    solution:
+      "I design tool-using agents with LangGraph, OpenAI SDK, MCP, APIs, checkpoints, and structured workflows.",
+    impact:
+      "Useful for automation, operations, customer success, and multi-step business processes.",
   },
   {
     title: "RAG Knowledge Systems",
-    problem: "Generic AI answers are not enough when decisions depend on trusted company knowledge.",
-    solution: "I build retrieval systems, ingestion pipelines, context flows, and assistant experiences around real documents and data.",
-    impact: "Useful for support copilots, internal knowledge assistants, and domain-specific product experiences.",
+    problem:
+      "Generic AI answers are not enough when decisions depend on trusted company knowledge.",
+    solution:
+      "I build retrieval systems, ingestion pipelines, context flows, and assistant experiences around real documents and data.",
+    impact:
+      "Useful for support copilots, internal knowledge assistants, and domain-specific product experiences.",
   },
   {
     title: "Full Stack SaaS Platforms",
-    problem: "AI products still need clean interfaces, reliable APIs, auth, data models, and deployment.",
-    solution: "I ship product interfaces and backend systems with Next.js, TypeScript, FastAPI, PostgreSQL, Docker, and cloud services.",
-    impact: "Useful for MVPs, dashboards, automation platforms, and production AI product foundations.",
+    problem:
+      "AI products still need clean interfaces, reliable APIs, auth, data models, and deployment.",
+    solution:
+      "I ship product interfaces and backend systems with Next.js, TypeScript, FastAPI, PostgreSQL, Docker, and cloud services.",
+    impact:
+      "Useful for MVPs, dashboards, automation platforms, and production AI product foundations.",
   },
 ];
 
@@ -76,7 +104,7 @@ const HomeHighlights = () => {
             </p>
             <Link
               href="/services"
-              className="mt-8 inline-flex rounded-lg border border-emerald-300/40 bg-emerald-300/10 px-5 py-3 font-semibold text-emerald-100 transition hover:bg-emerald-300/20"
+              className="mt-8 inline-flex rounded-lg border border-accent/40 bg-accent/10 px-5 py-3 font-semibold text-accent transition hover:bg-accent/20"
             >
               Explore Services
             </Link>
@@ -85,10 +113,15 @@ const HomeHighlights = () => {
           <div className="grid gap-4 sm:grid-cols-2">
             {problems.map((problem) => (
               <article
-                key={problem}
-                className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-5 leading-7 text-gray-300"
+                key={problem.title}
+                className="rounded-lg border border-white/10 bg-surface-soft/70 p-5"
               >
-                {problem}
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-pink-200">
+                  {problem.title}
+                </p>
+                <p className="mt-3 leading-7 text-gray-300">
+                  {problem.description}
+                </p>
               </article>
             ))}
           </div>
@@ -108,7 +141,7 @@ const HomeHighlights = () => {
             {buildAreas.map((area) => (
               <article
                 key={area.title}
-                className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6 transition hover:-translate-y-1 hover:border-cyan-300/50"
+                className="rounded-lg border border-white/10 bg-surface-soft/70 p-6 transition hover:-translate-y-1 hover:border-accent/50"
               >
                 <h3 className="text-2xl font-bold text-white">{area.title}</h3>
                 <div className="mt-5 space-y-4 text-sm leading-6 text-gray-300">

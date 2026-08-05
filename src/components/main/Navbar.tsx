@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full px-3 pt-3 sm:px-5 lg:px-8">
-      <nav className="mx-auto max-w-screen-2xl rounded-2xl border border-white/10 bg-[#030014]/80 shadow-2xl shadow-[#2A0E61]/40 backdrop-blur-xl">
+      <nav className="mx-auto max-w-screen-2xl rounded-2xl border border-white/10 bg-surface/80 shadow-2xl shadow-surface-soft/40 backdrop-blur-xl">
         <div className="flex h-[68px] items-center justify-between px-4 sm:px-5 lg:px-6">
           <Link
             href="/"
@@ -149,7 +149,7 @@ const Navbar = () => {
                       target="_blank"
                       aria-label={social.name}
                       onClick={() => setIsOpen(false)}
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[#030014]/80"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-surface/80"
                     >
                       <Image
                         src={social.src}

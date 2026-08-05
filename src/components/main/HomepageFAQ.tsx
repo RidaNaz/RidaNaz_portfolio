@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What is the best way to start a project conversation?",
     answer:
-      "LinkedIn is best for professional conversations, Upwork is best for freelance contracts, and email works well for direct collaboration requests.",
+      "Send a short project brief through LinkedIn, Upwork, or email with the business goals, users, and systems you want to connect.",
   },
 ];
 
@@ -45,7 +45,7 @@ const HomepageFAQ = () => {
           {faqs.map((faq) => (
             <article
               key={faq.question}
-              className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6"
+              className="rounded-lg border border-white/10 bg-surface-soft/70 p-6"
             >
               <h3 className="text-xl font-bold text-white">{faq.question}</h3>
               <p className="mt-3 leading-7 text-gray-300">{faq.answer}</p>
@@ -79,7 +79,7 @@ const FinalCTA = () => {
           <div className="flex flex-wrap gap-3 lg:justify-end">
             <Link
               href="/contact"
-              className="rounded-lg bg-white px-5 py-3 font-semibold text-[#030014] transition hover:bg-cyan-100"
+              className="rounded-lg bg-white px-5 py-3 font-semibold text-surface transition hover:bg-accent-soft/20"
             >
               Contact Me
             </Link>

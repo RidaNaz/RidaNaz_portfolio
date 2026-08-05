@@ -30,7 +30,7 @@ const ServicesCard = ({ num, title, description }: Props) => {
     return (
         <motion.div 
             whileHover={{ y: -5 }}
-            className="group relative h-full w-full bg-[#0c0e23]/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:border-purple-500/50 hover:bg-[#10132e]"
+            className="group relative h-full w-full bg-surface-soft/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:border-accent-alt/50 hover:bg-surface/80"
         >
             <div className="relative z-10">
                 <div className="w-16 h-16 rounded-2xl bg-purple-900/20 flex items-center justify-center mb-6 border border-purple-500/20 group-hover:bg-purple-600/30 transition-colors duration-300">

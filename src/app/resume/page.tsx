@@ -32,7 +32,7 @@ export default function ResumePage() {
           <Link
             href={profileLinks.resume}
             target="_blank"
-            className="rounded-lg bg-white px-5 py-3 font-semibold text-[#030014] transition hover:bg-pink-100"
+            className="rounded-lg bg-white px-5 py-3 font-semibold text-surface transition hover:bg-accent-soft/20"
           >
             Download Resume
           </Link>
@@ -46,7 +46,7 @@ export default function ResumePage() {
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-          <aside className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6">
+          <aside className="rounded-lg border border-white/10 bg-surface-soft/70 p-6">
             <h2 className="text-2xl font-bold">Highlights</h2>
             <ul className="mt-6 space-y-4 text-gray-300">
               {resumeHighlights.map((highlight) => (
@@ -81,7 +81,7 @@ export default function ResumePage() {
             {skillGroups.slice(0, 6).map((group) => (
               <article
                 key={group.title}
-                className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-5"
+                className="rounded-lg border border-white/10 bg-surface-soft/70 p-5"
               >
                 <h3 className="font-bold">{group.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-gray-300">
