@@ -60,7 +60,7 @@ const Services = () => {
           {serviceOffers.map((service) => (
             <article
               key={service.title}
-              className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6 transition hover:-translate-y-1 hover:border-cyan-300/50"
+              className="rounded-lg border border-white/10 bg-surface-soft/70 p-6 transition hover:-translate-y-1 hover:border-accent/50"
             >
               <h3 className="text-2xl font-bold text-white">{service.title}</h3>
               <p className="mt-4 text-sm font-semibold uppercase tracking-[0.14em] text-cyan-200">

@@ -28,7 +28,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-white/10 bg-[#030014] px-6 py-14 text-gray-300">
+    <footer className="w-full border-t border-white/10 bg-surface px-6 py-14 text-text-muted">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr]">
         <div>
           <Link href="/" className="text-2xl font-bold text-white">
@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/contact"
-              className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-[#030014] transition hover:bg-cyan-100"
+              className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-surface transition hover:bg-accent-soft/20"
             >
               Work With Me
             </Link>
@@ -50,7 +50,7 @@ const Footer = () => {
               href={profileLinks.upwork}
               target="_blank"
               rel="noopener"
-              className="rounded-lg border border-emerald-300/40 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-300/20"
+              className="rounded-lg border border-accent/40 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent transition hover:bg-accent/20"
             >
               Hire on Upwork
             </Link>

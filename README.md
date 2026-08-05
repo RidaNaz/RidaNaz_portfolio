@@ -1,7 +1,6 @@
 npm install framer-motion
 npm install @heroicons/react
 npm install react-icons
-npm install @react-three/fiber @react-three/drei
 npm install react-intersection-observer
 npm i sharp
 npx update-browserslist-db@latest

@@ -53,7 +53,7 @@ export default function ServicesPage() {
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {serviceOffers.map((service) => (
-            <article key={service.title} className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6 transition hover:-translate-y-1 hover:border-cyan-300/50">
+            <article key={service.title} className="rounded-lg border border-white/10 bg-surface-soft/70 p-6 transition hover:-translate-y-1 hover:border-accent/50">
               <h2 className="text-2xl font-bold text-white">{service.title}</h2>
               <p className="mt-4 leading-7 text-gray-300">{service.summary}</p>
               <ul className="mt-6 space-y-3 text-sm text-gray-300">
@@ -94,7 +94,7 @@ export default function ServicesPage() {
               Share the workflow, product goal, users, and systems involved. I can help shape the technical path and implementation plan.
             </p>
           </div>
-          <Link href="/contact" className="mt-6 inline-flex rounded-lg bg-white px-5 py-3 font-semibold text-[#030014] transition hover:bg-cyan-100 md:mt-0">
+          <Link href="/contact" className="mt-6 inline-flex rounded-lg bg-white px-5 py-3 font-semibold text-surface transition hover:bg-accent-soft/20 md:mt-0">
             Work With Me
           </Link>
         </div>

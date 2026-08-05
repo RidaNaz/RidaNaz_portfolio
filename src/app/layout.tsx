@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import Footer from "../components/main/Footer";
 import Script from "next/script";
-import StarsCanvas from "@/components/main/ClientStarsCanvas";
 
 const inter = Inter({ subsets: ["latin"] });
 const cedarville = Cedarville_Cursive({
@@ -157,7 +156,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.className} ${cedarville.variable} bg-[#030014] overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
+      <body className={`${inter.className} ${cedarville.variable} bg-surface overflow-y-scroll overflow-x-hidden max-w-screen-2xl mx-auto`}>
         {/* Inline a11y patcher runs before other JS to catch widget buttons. */}
         <Script id="a11y-fixer" strategy="beforeInteractive">{`
           (function () {
@@ -183,7 +182,6 @@ export default function RootLayout({
             labelButtons(document);
           })();
         `}</Script>
-        <StarsCanvas />
         <Navbar />
         {children}
         <Footer />

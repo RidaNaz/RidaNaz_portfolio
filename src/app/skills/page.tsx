@@ -39,7 +39,7 @@ export default function SkillsPage() {
             {skillHighlights.map((highlight) => (
               <article
                 key={highlight.label}
-                className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-5"
+                className="rounded-lg border border-white/10 bg-surface-soft/70 p-5"
               >
                 <p className="text-sm font-semibold text-cyan-200">
                   {highlight.label}
@@ -83,7 +83,7 @@ export default function SkillsPage() {
                   {workflow.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="rounded-full border border-white/10 bg-[#030014]/70 px-3 py-2 text-sm text-gray-200"
+                      className="rounded-full border border-white/10 bg-surface/70 px-3 py-2 text-sm text-text-muted"
                     >
                       {tool}
                     </span>
@@ -106,7 +106,7 @@ export default function SkillsPage() {
             {skillGroups.map((group) => (
               <article
                 key={group.title}
-                className="rounded-lg border border-white/10 bg-[#0c0e23]/70 p-6 backdrop-blur-xl transition hover:border-emerald-300/50"
+                className="rounded-lg border border-white/10 bg-surface-soft/70 p-6 backdrop-blur-xl transition hover:border-accent/50"
               >
                 <h3 className="text-2xl font-bold">{group.title}</h3>
                 <p className="mt-4 leading-7 text-gray-300">
@@ -158,7 +158,7 @@ export default function SkillsPage() {
           </div>
           <Link
             href="/contact"
-            className="mt-6 inline-flex rounded-lg bg-white px-5 py-3 font-semibold text-[#030014] transition hover:bg-emerald-100 md:mt-0"
+            className="mt-6 inline-flex rounded-lg bg-white px-5 py-3 font-semibold text-surface transition hover:bg-accent-soft/20 md:mt-0"
           >
             Work With Me
           </Link>

@@ -57,10 +57,10 @@ const PortfolioPreview = () => {
           {caseStudies.map((project) => (
             <article
               key={project.title}
-              className="group rounded-lg border border-white/10 bg-[#0c0e23]/70 p-5 transition hover:-translate-y-1 hover:border-pink-300/50"
+              className="group rounded-lg border border-white/10 bg-surface-soft/70 p-5 transition hover:-translate-y-1 hover:border-accent-alt/50"
             >
-              <Link href={project.link} target="_blank" rel="noopener">
-                <div className="relative aspect-[16/9] overflow-hidden rounded-lg bg-[#13162D]">
+              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-lg bg-surface-panel">
                   <Image
                     src={project.img}
                     alt={`${project.title} project screenshot`}
@@ -77,19 +77,22 @@ const PortfolioPreview = () => {
                 <h3 className="mt-3 text-2xl font-bold text-white">
                   {project.title}
                 </h3>
+                <p className="mt-4 text-sm leading-7 text-gray-300">
+                  {project.des}
+                </p>
                 <div className="mt-5 grid gap-4 text-sm leading-6 text-gray-300 md:grid-cols-3">
-                  <p>
+                  <div>
                     <span className="block font-semibold text-pink-200">Challenge</span>
                     {project.challenge}
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <span className="block font-semibold text-cyan-200">Solution</span>
                     {project.solution}
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <span className="block font-semibold text-emerald-200">Outcome</span>
                     {project.outcome}
-                  </p>
+                  </div>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {project.iconLists.slice(0, 5).map((icon: string) => (
@@ -100,6 +103,16 @@ const PortfolioPreview = () => {
                       <Image src={icon} alt="" width={24} height={24} className="h-6 w-6 object-contain" />
                     </span>
                   ))}
+                </div>
+                <div className="mt-6">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex rounded-lg border border-pink-300/40 bg-pink-300/10 px-4 py-2 text-sm font-semibold text-pink-100 transition hover:bg-pink-300/20"
+                  >
+                    View Project
+                  </Link>
                 </div>
               </div>
             </article>

@@ -1,24 +1,23 @@
 ﻿import React from "react";
 import { ArrowRightIcon, SparklesIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
 import Link from "next/link";
 
 const credibilitySignals = [
   "Lead Engineer at TalkifAI",
   "Voice AI + Agentic Workflows",
-  "Next.js, FastAPI, LiveKit, LangGraph",
+  "Production-grade SaaS systems",
 ];
 
 const HeroContent = () => {
   return (
     <section className="z-[20] mx-auto flex min-h-[760px] w-full max-w-7xl flex-col justify-center px-6 pb-14 pt-36 sm:px-10 lg:px-8">
-      <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
+      <div className="grid items-center gap-12">
         <div className="flex max-w-4xl flex-col justify-center gap-6 text-start">
           <div
-            className="Welcome-box border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9] animate-slide-top"
+            className="Welcome-box border-accent/40 px-[7px] py-[8px] opacity-[0.9] animate-slide-top"
             style={{ animationFillMode: "both" }}
           >
-            <SparklesIcon className="mr-[10px] h-5 w-5 text-[#b49bff]" />
+            <SparklesIcon className="mr-[10px] h-5 w-5 text-accent-alt" />
             <p className="Welcome-text text-[13px]">
               Agentic AI Engineer & Full Stack Product Builder
             </p>
@@ -77,23 +76,6 @@ const HeroContent = () => {
           </div>
         </div>
 
-        <div
-          className="hidden h-full w-full justify-center lg:flex animate-slide-right"
-          style={{ animationDelay: "0.3s", animationFillMode: "both" }}
-        >
-          <div className="relative flex aspect-square w-full max-w-[500px] items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] p-8">
-            <div className="absolute inset-8 rounded-lg border border-cyan-200/10" />
-            <Image
-              src="/mainIconsdark.svg"
-              alt="AI product engineering tools and workflow icons"
-              height={460}
-              width={460}
-              priority
-              fetchPriority="high"
-              style={{ height: "auto", width: "auto" }}
-            />
-          </div>
-        </div>
       </div>
     </section>
   );

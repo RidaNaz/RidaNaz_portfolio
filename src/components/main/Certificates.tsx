@@ -1,8 +1,5 @@
-﻿"use client";
-import React from "react";
-import { CertificateCards } from "@/constants";
+﻿import { CertificateCards } from "@/constants";
 import CertificateCard from "../sub/CertificateCard";
-import { motion } from "framer-motion";
 
 const Certificates = () => {
   return (
@@ -13,31 +10,24 @@ const Certificates = () => {
             Credentials
           </p>
           <h2 className="text-[34px] font-bold leading-tight sm:text-[46px]">
-            Formal learning that supports practical AI product work.
+            Credentials that back the product and technical systems I build.
           </h2>
           <p className="mt-5 text-lg leading-8 text-gray-300">
-            Certifications are supporting proof. The stronger signal is how the
-            concepts show up in shipped agents, voice infrastructure, RAG
-            systems, and full stack products.
+            Certifications support the work, but the strongest signal is the
+            architecture, deployment, and product execution behind the projects.
           </p>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {CertificateCards.map((card, index) => (
-            <motion.div
-              key={card.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, delay: index * 0.08 }}
-              viewport={{ once: true }}
-            >
+          {CertificateCards.map((card) => (
+            <div key={card.id}>
               <CertificateCard
                 src={card.thumbnail}
                 title={card.title}
                 description={card.desc}
                 badge={card.badge}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
