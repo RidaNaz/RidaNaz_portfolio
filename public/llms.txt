@@ -1,30 +1,43 @@
-# Rida Naz - FullStack Developer & Agentic AI Engineer
+﻿# Rida Naz - Agentic AI Engineer & Full Stack Product Builder
 
 ## About
 Rida Naz is a Full Stack Developer and Agentic AI Engineer based in Karachi, Pakistan.
-Founding team member and Lead Engineer at TalkifAI, an AI voice agent platform.
-Specialized in Voice AI, Agentic Workflows, LiveKit, Next.js, FastAPI, and LangGraph.
+She builds production AI systems, voice AI agents, agentic workflows, RAG knowledge systems, and full stack SaaS platforms for founders, startups, and technical teams.
 
-## Links
+## Current Role
+Founding team member and Lead Engineer at TalkifAI, an AI voice agent platform.
+Her work includes LiveKit voice infrastructure, SIP/WebRTC pipelines, BYOC telephony, backend APIs, RAG knowledge bases, and scalable deployment.
+
+## Core Expertise
+- Voice AI agents and realtime communication
+- Agentic workflows and tool-using AI systems
+- RAG knowledge systems and AI assistants
+- Full stack SaaS platforms
+- FastAPI, Next.js, TypeScript, PostgreSQL, Docker, and Google Cloud
+- LangGraph, LangChain, OpenAI Agents SDK, MCP, LiveKit, Twilio, and Telnyx
+- Agentic SEO, structured metadata, and AI-readable content architecture
+
+## Services
+- Voice AI agent build
+- Agentic workflow automation
+- RAG knowledge assistant development
+- Full stack AI SaaS MVP development
+- AI integration layers for APIs, tools, and business systems
+- Agentic SEO and AI visibility
+
+## Featured Projects
+- [TalkifAI](https://talkifai.dev): AI voice agent platform with LiveKit, SIP, BYOC telephony, RAG workflows, and multi-tenant infrastructure.
+- [AI Native Book](https://ainative-book.ridanaz.com): Physical AI and humanoid robotics textbook with integrated RAG chatbot.
+- [Agentic Todo](https://agentic-todo.ridanaz.com): MCP-powered full stack task management app with natural language workflows.
+
+## Website Links
 - [Portfolio](https://www.ridanaz.com)
 - [About](https://www.ridanaz.com/about)
 - [Services](https://www.ridanaz.com/services)
-- [Portfolio](https://www.ridanaz.com/portfolio)
+- [Portfolio Projects](https://www.ridanaz.com/portfolio)
 - [Skills](https://www.ridanaz.com/skills)
 - [Resume/CV](https://www.ridanaz.com/resume)
 - [Contact](https://www.ridanaz.com/contact)
 - [GitHub](https://github.com/RidaNaz)
 - [LinkedIn](https://linkedin.com/in/ridanaz67)
 - [Upwork](https://www.upwork.com/freelancers/~0110100ff16de521db)
-
-## Services
-- Agentic AI systems
-- Voice AI agents
-- Full stack SaaS development
-- RAG knowledge systems
-- MCP and API integrations
-- Agentic SEO and AI visibility
-
-## Projects
-- [TalkifAI](https://talkifai.dev): AI voice agent platform with BYOC telephony support
-- [AI Native Book](https://ainative-book.ridanaz.com): Physical AI and humanoid robotics textbook
